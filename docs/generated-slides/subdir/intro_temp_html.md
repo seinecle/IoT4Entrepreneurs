@@ -120,9 +120,9 @@ Discover my other courses in data / tech for business: http://www.clementlevallo
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
-        var sc_project = 11304288;
+        var sc_project = 11410058;
         var sc_invisible = 1;
-        var sc_security = "4ace8383";
+        var sc_security = "a7720bf3";
         var scJsHost = (("https:" == document.location.protocol) ?
             "https://secure." : "http://www.");
         document.write("<sc" + "ript type='text/javascript' src='" +
@@ -132,6 +132,6 @@ pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <noscript><div class="statcounter"><a title="site stats"
     href="http://statcounter.com/" target="_blank"><img
     class="statcounter"
-    src="//c.statcounter.com/11304288/0/4ace8383/1/" alt="site
+    src="//c.statcounter.com/11410058/0/a7720bf3/1/" alt="site
     stats"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide -->]
