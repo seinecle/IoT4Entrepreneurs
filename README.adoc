@@ -1,12 +1,12 @@
 = Internet of Things for Entrepreneurs
-Clément Levallois <clementlevallois@gmail.com>
+Clément Levallois <levallois@em-lyon.com>
 2017-007-31
 :revnumber: 1.0
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
 
-IoT for Entrepreneurs is a couse given to emlyon business school students by Clement Levallois.
+IoT for Entrepreneurs is a course given to emlyon business school students by Clement Levallois.
 
 Looking for the website of the course? There -> https://seinecle.github.io/IoT4Entrepreneurs/
 

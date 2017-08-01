@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.clementlevallois</groupId>
-    <artifactId>linux-tutorials-source</artifactId>
+    <artifactId>iot-for-entrepreneurs</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>linux-tutorials-source</name>
+    <name>iot-for-entrepreneurs</name>
 
     <properties>
         <!--<doc></doc>-->
@@ -15,6 +15,8 @@
         <bookName>book-linux-tutorials-en.adoc</bookName>
         <medium.publish>false</medium.publish>
         <asciidoctorj.diagram.version>1.5.0</asciidoctorj.diagram.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <parent>
         <groupId>net.clementlevallois</groupId>
