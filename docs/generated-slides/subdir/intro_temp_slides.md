@@ -93,7 +93,7 @@ image::grading-scale.png["Grading scale"]
 
 ==  !
 Each video should last about 3 minutes and *less than 5 minutes in any case*.
-The videos should be uploaded online (on Youtube, Vimeo, DaylyMotion...).
+The videos should be uploaded online (on Youtube, Vimeo, DailyMotion...).
 
 - *emlyon students only*: send me the links to the video on the dropbox of brightspace.
 - *other participants*: you can send me the links to the videos at levallois@em-lyon.com and I'll be happy to evaluate them.

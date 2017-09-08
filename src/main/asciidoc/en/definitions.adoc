@@ -46,7 +46,7 @@ Once we understand what is the "Internet of things", the meaning of "connected o
 *What about "smart objects?".*
 
 This is synonymous to connected objects, where "smart" insists that the object can have a richer set of functions thanks to being connected to the Internet.
-It can even improve its features (for example, http://www.trustedreviews.com/news/over-the-air-software-update-makes-the-tesla-p85d-even-faster-2924452[a car driving faster]), thanks to updates made to its software through the Internet.
+For example a "smart car" is a car that can http://www.trustedreviews.com/news/over-the-air-software-update-makes-the-tesla-p85d-even-faster-2924452[drive faster] a month after your purchased it, thanks to updates made to its software through the Internet.
 ====
 
 //ST: !
@@ -145,7 +145,7 @@ A connected object can just broadcast some information without receiving anythin
 
 //ST: !
 
-- the object sends data automatically, like these connected beehives build by http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c19.0.1041.1041/14723479_163242737474300_6697748361329508352_n.jpg[emlyon students] and now https://twitter.com/arnicas/status/882894715124936704[on the roof of the school]. They send pictures / temperature measures:
+- the object sends data automatically, like these connected beehives build by http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c19.0.1041.1041/14723479_163242737474300_6697748361329508352_n.jpg[emlyon students] and now producing honey https://makersbeehives.herokuapp.com/[on the roof of the school]. They send pictures / temperature measures:
 
 image::bees.gif[align="center"]
 

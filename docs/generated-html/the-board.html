@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="author" content="Clément Levallois">
-<title>Definition of IoT and connected objects</title>
+<title>Which board are we going to use?</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -512,27 +512,18 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article">
 <div id="header">
-<h1>Definition of IoT and connected objects</h1>
+<h1>Which board are we going to use?</h1>
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2017-08-01</span>
+<span id="revdate">2017-08-04</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_1_internet_of_things_connected_objects">1. Internet of Things, connected objects?</a></li>
-<li><a href="#_2_examples">2. Examples</a>
-<ul class="sectlevel3">
-<li><a href="#_1_connected_objects_for_consumers">1. connected objects for consumers</a></li>
-<li><a href="#_2_connected_objects_for_the_industry">2. connected objects for the industry</a></li>
-</ul>
-</li>
-<li><a href="#_3_the_anatomy_of_a_connected_object">3. The anatomy of a connected object</a>
-<ul class="sectlevel3">
-<li><a href="#_1_the_object_must_be_connected_duh">1. The object must be connected (duh)</a></li>
-</ul>
-</li>
+<li><a href="#_what_is_a_board">What is a board?</a></li>
+<li><a href="#_what_are_boards_for">What are boards for?</a></li>
+<li><a href="#_which_board_to_choose">Which board to choose?</a></li>
 <li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
@@ -541,7 +532,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2017-09-08</p>
+<p>last modified: 2017-08-04</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -554,286 +545,112 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect1">
-<h2 id="_1_internet_of_things_connected_objects">1. Internet of Things, connected objects?</h2>
+<h2 id="_what_is_a_board">What is a board?</h2>
 <div class="sectionbody">
-<div class="quoteblock">
-<blockquote>
 <div class="paragraph">
-<p>The Internet of things (IoT) is the inter-networking of physical devices, vehicles (also referred to as "connected devices" and "smart devices"), buildings, and other items embedded with electronics, software, sensors, actuators, and network connectivity which enable these objects to collect and exchange data.</p>
-</div>
-</blockquote>
-<div class="attribution">
-&#8212; Wikipedia<br>
-<cite>entry "Internet of Things" visited on 2017/08/01</cite>
-</div>
+<p>A board is a small piece of plastic where electronic components can be added. Which components to add?</p>
 </div>
 <div class="paragraph">
-<p>Some comments on this definition:</p>
+<p>It is possible to put an entire small computer (but a small one!) on a board. The exact term for this small computer is a <strong>microcontroller</strong>.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>we are familiar with Internet used to transmit information from computer to computer (sending an email, visiting a web page&#8230;&#8203;)</p>
-</li>
-<li>
-<p>the expression "Internet of things" insists on a different kind of use: what if we could connect any object (not just our computers or smartphones) to the Internet?</p>
-</li>
-</ul>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/rp3.jpg" alt="rp3">
+</div>
 </div>
 <div class="paragraph">
-<p>The idea to connect objects to the Internet is not new: professors connected a Coke Machine to Internet in the late 1970s or early 1980s, so that they could check from their computers if it was empty or not.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup></p>
+<p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>Once we understand what is the "Internet of things", the meaning of "connected objects" is clear: these are the objects connected to this network.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><strong>What about "smart objects?".</strong></p>
+<p>The real size of this object is 8.5cm × 5.6cm (3.3 in × 2.2 in). It costs about 35$.</p>
 </div>
 <div class="paragraph">
-<p>This is synonymous to connected objects, where "smart" insists that the object can have a richer set of functions thanks to being connected to the Internet.
-For example a "smart car" is a car that can <a href="http://www.trustedreviews.com/news/over-the-air-software-update-makes-the-tesla-p85d-even-faster-2924452">drive faster</a> a month after your purchased it, thanks to updates made to its software through the Internet.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Starting in the 2000s, we moved from small, fun experiments to the development of an entire industry based on this concept of connecting things to the Internet.</p>
-</div>
-<div class="paragraph">
-<p>With <em>decreasing costs</em> for creating connecting objects, and easier protocols to connect (like Wifi, bluetooth and others, which appeared in the late 1990s), connected objects started to become interesting playground for serious innovation.</p>
-</div>
-<div class="paragraph">
-<p>What kind of new service could be created with them? What value would they bring?</p>
+<p>This picture represents a "Raspberry Pi", where we see the green plastic board, electronic components on it: this is a microcontroller. As a shorthand, we will continue to call this a "board".</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2_examples">2. Examples</h2>
+<h2 id="_what_are_boards_for">What are boards for?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Connected objects are more and more present in our lives. We can put them in 2 categories:</p>
+<p>The goal of boards is simple: they can provide the functionalities of a computer in a very small space because they are <strong>tiny</strong>.</p>
 </div>
-<div class="sect3">
-<h4 id="_1_connected_objects_for_consumers">1. connected objects for consumers</h4>
 <div class="paragraph">
-<p><a href="https://explore.garmin.com/en-US/vivo-fitness">a wrist band</a>, or the <a href="https://www.amazon.com/dp/product/B00X4WHP5E/ref=EchoCP_dt_tile_text">Amazon Echo</a>, which is a sound speaker doubling as a Digital Assistant. Or a scale by <a href="https://health.nokia.com/fr/fr/body">Nokia</a>, which tracks your weight but also pulsations.</p>
+<p>For example, if you want to create a connected coffee machine (why not?), it would be weird to attach the coffee machine to this computer:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/garmin.png" alt="garmin">
+<img src="images/desktop_computer.jpg" alt="desktop computer">
 </div>
-<div class="title">Figure 1. source: <a href="https://explore.garmin.com/en-US/vivo-fitness" class="bare">https://explore.garmin.com/en-US/vivo-fitness</a></div>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Connected objects we can dress with are called <strong>wearables</strong> (<a href="https://www.cnet.com/topics/wearable-tech/best-wearable-tech/">smart watches and fitness trackers mostly</a>, but <a href="https://www.wareable.com/smart-clothing/best-smart-clothing">actual clothing as well</a>)
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Connected objects for domestic use are often called <strong>smart house devices</strong>, and include thermostats, cameras and <a href="https://www.postscapes.com/internet-of-things-award/connected-home-products/">more</a>.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_2_connected_objects_for_the_industry">2. connected objects for the industry</h4>
-<div class="paragraph">
-<p>Connected objects are useful to help keep track of all pieces of material and semi-finished products along the production line, in all industries (from agriculture to manufacturing, through health care etc.)</p>
-</div>
-<div class="paragraph">
-<p>The goal is to eliminate waste and increase speed by controlling and monitoring their processes more closely thanks to these devices.</p>
-</div>
-<div id="img-industry-device" class="imageblock" style="text-align: center">
-<div class="content">
-<a class="image" href="http://embedded-computing.com/news/wzzard-intelligent-sensing-platform-brings-smart-mesh-networking-to-iot-edge-applications/"><img src="images/industry-sensor.jpeg" alt="industry sensor"></a>
-</div>
-<div class="title">Figure 2. This device can send temperature measurement and many other kinds to a monitoring console</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>Examples of companies managing IoT for the industry are <a href="http://www.ripplesiot.com/">Ripples</a>, <a href="http://www.pentaho.com/internet-of-things-analytics">Pentaho</a>, or <a href="https://www.ptc.com/en/internet-of-things">PTC</a>.</p>
+<p>Instead, we can add a tiny board like the one above, which will do just what we need:
+maybe have just a small screen and connecting to our mobile phone via wifi (so that coffee can start when our alarm clock gets off, for instance).</p>
 </div>
 <div class="paragraph">
-<p>In service industries, connected objects help deliver the service better (like <a href="https://disneyworld.disney.go.com/plan/my-disney-experience/bands-cards/">the MagicBand at Disney World</a>), and help control the quality of the service delivered by taking measures.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/magicband.jpg" alt="magicband">
-</div>
-<div class="title">Figure 3. The "MagicBand" by Disney which acts as an entrance ticket and e-wallet</div>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
+<p>And it will be cheap (just add 35$ to turn your coffee machine into a connected object!) and need just a little bit of electrical current (compared to a big computer).</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_3_the_anatomy_of_a_connected_object">3. The anatomy of a connected object</h2>
+<h2 id="_which_board_to_choose">Which board to choose?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>What makes an object part of the Internet of things? 3 things:</p>
-</div>
-<div class="sect3">
-<h4 id="_1_the_object_must_be_connected_duh">1. The object must be connected (duh)</h4>
-<div class="paragraph">
-<p>The connection can take many forms:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>a) the object can receive and send data, like this Thermostat:</pre>
-</div>
+<p>There are litteraly hundreds of different boards. We choose here the feather huzzah:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="https://nest.com/thermostat/meet-nest-thermostat/"><img src="images/nest.jpg" alt="nest"></a>
+<a class="image" href="https://www.adafruit.com/product/3213"><img src="images/huzzah.jpg" alt="huzzah"></a>
 </div>
-<div class="title">Figure 4. The Nest thermostat</div>
+<div class="title">Figure 1. The Feather Huzzah</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>The thermostat  sends temperature measurements to your smartphone, and receives instructions from you (to decrease or increase the temperature).</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>b) The object can be just an emitter</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>A connected object can just broadcast some information without receiving anything. Two cases:</p>
+<p>Why the feather huuzah?</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>the object sends data automatically, like these connected beehives build by <a href="http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c19.0.1041.1041/14723479_163242737474300_6697748361329508352_n.jpg">emlyon students</a> and now producing honey <a href="https://makersbeehives.herokuapp.com/">on the roof of the school</a>. They send pictures / temperature measures:</p>
+<p>it is tiny: 2 in x 0.9 in (51mm x 23mm)</p>
+</li>
+<li>
+<p>it can connect to Wifi</p>
+</li>
+<li>
+<p>it is cheap: 20$</p>
 </li>
 </ul>
 </div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="images/bees.gif" alt="bees">
-</div>
+<div class="paragraph">
+<p>There are other boards much smaller and cheaper, which can also connect to wifi. Why don&#8217;t we choose them?</p>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
-</div>
-<div class="paragraph">
-<p>If the object is sending data, it supposes it has a <strong>sensor</strong> to measure things around it, so that it can then send this measure.
-Sensors are pieces of electronic equipment, often quite tiny.
-The list of sensors is immense and this is just a small sample:</p>
-</div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<a class="image" href="https://www.sparkfun.com/categories/305?filter_option%5Bprice%5D%5B%5D=is_price_range_0_10&filter_option%5Bprice%5D%5B%5D=is_price_range_10_20&filter_price_floor=&filter_price_ceil="><img src="images/sensors.jpg" alt="sensors"></a>
-</div>
-<div class="title">Figure 5. Sensors!</div>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>They are much harder to use because:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>or the object sends a signal continuously, which is received by your phone when you walk next to it. In this case the object is called a <strong>beacon</strong>.
-It is used in stores to interact with shoppers:</p>
+<p>they have no plug to branch a standard micro usb cable (remember we need some electricity to power the object!)</p>
+</li>
+<li>
+<p>the programming language these boards use are difficult to learn for non specialists.</p>
+</li>
+<li>
+<p>their documentation (all the documents explaining how to use them) is very technical, not very clear.</p>
 </li>
 </ul>
 </div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="images/iBeacon.jpg" alt="iBeacon">
-</div>
+<div class="paragraph">
+<p>Said differently: the board we are going to use has clear documentation, is easy to plug, and it is easy to program.
+Why? Because it is a board following the principles of Arduino: easy to use, even for non specialists.</p>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
-</div>
-<div class="paragraph">
-<p>And it is also used in logistics to track shipping items:</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<video src="images/Q5VDEdF3cBc" controls>
-Your browser does not support the video tag.
-</video>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>c) The object can be just a receiver</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>In this case, the connected object can display some information that it receives from the network it is connected to.</p>
-</div>
-<div class="paragraph">
-<p>This is the kind of objects we are going to build in this course: an object which receives data about air pollution, and shows it on a screen.
-Check the small screen in the middle of it!</p>
-</div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="images/object.jpg" alt="object">
-</div>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Connected objects which receive data can do many things with it, not just showing stuff on screen.</p>
-</div>
-<div class="paragraph">
-<p>The connected object can move, compute things, make sound or light&#8230;&#8203; everything is possible.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>d) also interesting: the object can connect... to another object</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This is called a "swarm": when multiple objects can coordinate their actions by connecting with each other, instead of connected separately to a central point.</p>
-</div>
-<div class="paragraph">
-<p>Connected objects can coordinate to move together and perform a common action (like <a href="https://www.youtube.com/watch?v=CJOubyiITsE">moving a child!</a>), or just exchange data.</p>
-</div>
+<p>If you are interested, the whole story is here: it all started with <a href="https://arduinohistory.github.io/">a student in design in Italy, in 2003&#8230;&#8203;</a></p>
 </div>
 </div>
 </div>
@@ -873,16 +690,10 @@ This course is made by Clement Levallois.</p>
 </div>
 </div>
 </div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnote_1">
-<a href="#_footnoteref_1">1</a>. <a href="https://www.cs.cmu.edu/~coke/history_long.txt" class="bare">https://www.cs.cmu.edu/~coke/history_long.txt</a>
-</div>
-</div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-09-08 11:28:03 CEST
+Last updated 2017-08-04 17:30:34 CEST
 </div>
 </div>
 </body>
