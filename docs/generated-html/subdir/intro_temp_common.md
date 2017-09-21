@@ -18,6 +18,10 @@ image::EMLyon_logo_corp.png[align="center"]
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 //ST: !
+== NOTE
+WARNING: *for emlyon students*: this document does not substitute for the syllabus posted on Brightspace. Please go and read the syllabus.
+
+//ST: !
 == 1. Instructor and office hours
 //ST: 1. Instructor and office hours
 
@@ -27,7 +31,7 @@ The designer and instructor of this course is http://www.clementlevallois.net[Cl
 
 Office hours:
 
-- *emlyon students*: Fridays 9h-10h at the emlyon campus at Saint Etienne and by appointment (levallois@em-lyon.com)
+- *emlyon students*: Fridays morning after the course at the emlyon campus at Saint Etienne and by appointment (levallois@em-lyon.com)
 - *other participants*: get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 
 
@@ -99,7 +103,7 @@ The evaluation is in two steps:
 - a video where you show your object, which should be working. You explain in this video the key difficulty you faced.
 
 //ST: !
-- a video where you discuss a connected object on the market (no need to buy it!). You explain 1) the function it performs, and 2) the business model behind it.
+- a video where you discuss a connected object on the market (no need to buy it!). You explain 1) the function it performs, 2) the business model behind it, and 3) secuirty issues raised by the object.
 
 //ST: !
 
@@ -114,6 +118,7 @@ image::grading-scale.png["Grading scale"]
 Each video should last about 3 minutes and *less than 5 minutes in any case*.
 The videos should be uploaded online (on Youtube, Vimeo, DailyMotion...).
 
+//ST: !
 - *emlyon students only*: send me the links to the video on the dropbox of brightspace.
 - *other participants*: you can send me the links to the videos at levallois@em-lyon.com and I'll be happy to evaluate them.
 
