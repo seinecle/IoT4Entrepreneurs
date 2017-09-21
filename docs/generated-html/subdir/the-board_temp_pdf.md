@@ -1,4 +1,4 @@
-= Which board are we going to use?
+= Iot for entrepreneurs: Which board are we going to use?
 Clément Levallois <levallois@em-lyon.com>
 2017-08-04
 
@@ -10,7 +10,7 @@ last modified: {docdate}
 :example-caption!:
 :sourcedir: ../../../main/java
 
-:title-logo-image: EMLyon_logo_corp.png[width="450" align="center"]
+:title-logo-image: EMLyon_logo_corp.png[align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
