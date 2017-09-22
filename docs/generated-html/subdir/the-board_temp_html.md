@@ -43,6 +43,7 @@ This picture represents a "Raspberry Pi", where we see the green plastic board, 
 
 The goal of boards is simple: they can provide the functionalities of a computer in a very small space because they are *tiny*.
 
+//ST: !
 For example, if you want to create a connected coffee machine (why not?), it would be weird to attach the coffee machine to this computer:
 
 //ST: !
@@ -53,6 +54,7 @@ image::desktop_computer.jpg[align="center"]
 Instead, we can add a tiny board like the one above, which will do just what we need:
 maybe have just a small screen and connecting to our mobile phone via wifi (so that coffee can start when our alarm clock gets off, for instance).
 
+//ST: !
 And it will be cheap (just add 35$ to turn your coffee machine into a connected object!) and need just a little bit of electrical current (compared to a big computer).
 
 //ST: !
@@ -60,7 +62,7 @@ And it will be cheap (just add 35$ to turn your coffee machine into a connected 
 //ST: Which board to choose?
 //ST: !
 
-There are litteraly hundreds of different boards. We choose here the feather huzzah:
+There are litteraly hundreds of different boards. We choose here the Feather Huzzah:
 
 .The Feather Huzzah
 [link=https://www.adafruit.com/product/3213]
@@ -70,13 +72,14 @@ image::huzzah.jpg[align="center"]
 //ST: !
 Why the feather huuzah?
 
-- it is tiny: 2 in x 0.9 in (51mm x 23mm)
+- it is really tiny! 2 in x 0.9 in (51mm x 23mm)
 - it can connect to Wifi
 - it is cheap: 20$
 
 //ST: !
 There are other boards much smaller and cheaper, which can also connect to wifi. Why don't we choose them?
 
+//ST: !
 They are much harder to use because:
 
 - they have no plug to branch a standard micro usb cable (remember we need some electricity to power the object!)
@@ -88,6 +91,7 @@ They are much harder to use because:
 Said differently: the board we are going to use has clear documentation, is easy to plug, and it is easy to program.
 Why? Because it is a board following the principles of Arduino: easy to use, even for non specialists.
 
+//ST: !
 If you are interested, the whole story is here: it all started with https://arduinohistory.github.io/[a student in design in Italy, in 2003...]
 
 

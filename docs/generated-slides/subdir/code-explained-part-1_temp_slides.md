@@ -172,7 +172,7 @@ Where does the `readAQIResponse` come from? It is a function written in another 
 screen.println("air quality");//<1>
 screen.println("at "+ location + ":");//<2>
 screen.println(aqiNumber);//<3>
-screen.display();//<24>
+screen.display();//<4>
 ----
 <1> will write "air quality" on the 1st line of the screen
 <2> will write "at Saint-Etienne" on the 2nd line of the screen (if the value of your location variable is "Saint-Etienne")

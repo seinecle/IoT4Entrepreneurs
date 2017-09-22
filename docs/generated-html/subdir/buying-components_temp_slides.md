@@ -58,7 +58,7 @@ Here is a list of resellers which are cheaper options when you are based in Euro
 
 - http://www.exp-tech.de[Exp-tech.de], Germany based.
 - http://boutique.semageek.com/fr/[Semageek], France
-- https://www.coolcomponents.co.uk/ [Cool Components], based in UK.
+- https://www.coolcomponents.co.uk/[Cool Components], based in UK.
 
 ==  The end
 ==  !
