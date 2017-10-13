@@ -1,4 +1,4 @@
-= Definition of IoT and connected objects
+= IoT for entrepreneurs: Definition of IoT and connected objects
 Clément Levallois <levallois@em-lyon.com>
 2017-08-01
 
@@ -11,7 +11,7 @@ last modified: {docdate}
 ifndef::imagesdir[:imagesdir: ../images]
 ifndef::sourcedir[:sourcedir: ../../../main/java]
 
-:title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
+:title-logo-image: EMLyon_logo_corp.png[align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
 
