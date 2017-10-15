@@ -16,7 +16,6 @@ last modified: {docdate}
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
 
-
 //[source,arduino,linenums,highlight='1-2']
 [source,arduino]
 

@@ -102,15 +102,15 @@ table.CodeRay td.code>pre{padding:0}
 <div class="colist arabic"><ol><li><p>The library to help the board deal with graphics</p></li><li><p>The library to help the board deal with the specific screen Feather OLED</p></li><li><p>The library that saves us time when dealing with text formatted in JSON</p></li></ol></div>
 <div class="paragraph"><p>The next lines of code are used to store some useful information:</p></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">char* ssid     = &quot;name of wifi network here&quot;; <b>(1)</b>
-char* password = &quot;password here&quot;; <b>(2)</b></code></pre></div></div>
+char* password = &quot;password here&quot;;<b>(2)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>means: we create the variable called <code>ssid</code>. We give it the value 'name of wifi network here'. This variable is of type <code>chars*</code> (characters)</p></li><li><p>means: we create the variable called <code>password</code>. We give it the value 'password here'. This variable is of type <code>chars*</code> (characters)</p></li></ol></div>
 <div class="paragraph"><p>Of coure, these values are just examples and you should put the name of your own wifi network and password.</p></div>
-<div class="admonitionblock warning"><table><tr><td class="icon"><div class="title">Warning</div></td><td class="content">Don&#8217;t forget the semi-colon at the end of the lines!</td></tr></table></div>
+<div class="admonitionblock warning"><table><tr><td class="icon"><div class="title"></div></td><td class="content">Don&#8217;t forget the semi-colon at the end of the lines!</td></tr></table></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">String location = &quot;Saint-Etienne&quot;; <b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>means: we create the variable called <code>location</code>. We give it the value "Saint-Etienne" (you can choose another place of course). This variable is of type <code>String</code> (<code>String</code> is the technical term for text).</p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">Adafruit_FeatherOLED screen = Adafruit_FeatherOLED(); <b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>means: we create the variable called "screen". We give it the value returned by the function <code>Adafruit_FeatherOLED()</code>. The variable is of type <code>Adafruit_FeatherOLED</code>.</p></li></ol></div>
-<div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">WiFiClient client; <b>(1)</b></code></pre></div></div>
+<div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">WiFiClient client;<b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>means: we create the variable named "client", of type "WifiClient". It has no value yet.</p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">void setup() { <b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>This is called a function or method. The <code>setup</code> funcion is executed just once, when the board is powered up.</p></li></ol></div>
@@ -122,12 +122,12 @@ Serial.begin(9600);<b>(1)</b>
 while (!Serial)<b>(2)</b>
   {<b>(3)</b>
     ; <b>(4)</b>
-  } <b>(5)</b></code></pre></div></div>
+  }<b>(5)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>means: we execute the method called <code>begin</code> on the variable <code>Serial</code>.</p></li><li><p>means: as long as the variable "Serial" is not equal to "true", execute the lines of codes in the curly braces <code>{ }</code> in &lt;3&gt; and &lt;5&gt;. <a href="https://www.arduino.cc/en/Reference/While">More info here</a>.</p></li><li><p>The instructions in the curly braces are just this <code>;</code>, which do nothing. So the board is basically waiting until <code>Serial</code> switches to "true".</p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">//initialize the screen and hides the battery sign
 
 screen.init();<b>(1)</b>
-screen.setBatteryVisible(false); <b>(2)</b></code></pre></div></div>
+screen.setBatteryVisible(false);<b>(2)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>means: we execute the method called <code>init</code> on the variable <code>screen</code>.</p></li><li><p>means: we execute the method called <code>setBatteryVisible</code> on the variable <code>screen</code>. We use the parameter <code>false</code> for this method.</p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">//initialize the wifi connection
 
@@ -144,12 +144,12 @@ while (WiFi.status() != WL_CONNECTED ) { <b>(1)</b>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">void loop() { <b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>the lines of code inside the loop function will be executed until the last, then start over again and again. This is where the interesting stuff happens! <a href="https://www.arduino.cc/en/Reference/Loop">See here for more</a>.</p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">screen.clearDisplay();<b>(1)</b>
-screen.clearMsgArea(); <b>(2)</b></code></pre></div></div>
+screen.clearMsgArea();<b>(2)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>deletes what is on screen</p></li><li><p>deletes the previous message</p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">//get the quality of air at location
-callAQI(location); <b>(1)</b> <b>(2)</b></code></pre></div></div>
+callAQI(location);<b>(1)</b> <b>(2)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>means: execute the method <code>callAQI</code>. Where does it come from? You will write the code for this function in a separate file. The role of this function is to connect via wifi to <a href="http://waqi.info/" class="bare">http://waqi.info/</a> and return the air quality for a given location.</p></li><li><p><code>location</code> is a parameter to the function. It is a variable you defined above (scroll up).</p></li></ol></div>
-<div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">String aqiNumber = readAQIResponse(); <b>(1)</b></code></pre></div></div>
+<div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">String aqiNumber = readAQIResponse();<b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>We create the variable <code>aqiNumber</code>, of type <code>String</code>. The value assigned to this variable is the number returned by the function <code>readAQIResponse()</code>.</p></li></ol></div>
 <div class="paragraph"><p>Where does the <code>readAQIResponse</code> come from? It is a function written in another file by you. It picks the text returned by the previous function (<code>callAQI</code>), and extracts from it the number representing the air quality.</p></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">//display the air quality on the screen
@@ -157,7 +157,7 @@ callAQI(location); <b>(1)</b> <b>(2)</b></code></pre></div></div>
 screen.println(&quot;air quality&quot;);<b>(1)</b>
 screen.println(&quot;at &quot;+ location + &quot;:&quot;);<b>(2)</b>
 screen.println(aqiNumber);<b>(3)</b>
-screen.display(); <b>(4)</b></code></pre></div></div>
+screen.display();<b>(4)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>will write "air quality" on the 1st line of the screen</p></li><li><p>will write "at Saint-Etienne" on the 2nd line of the screen (if the value of your location variable is "Saint-Etienne")</p></li><li><p>will write the air pollution index retrieved from above</p></li><li><p>will show the message on screen (if you forget this line, the message is not visible).</p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">// wait 5 seconds
 delay(5000);

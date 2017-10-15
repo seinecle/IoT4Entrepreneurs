@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :source-highlighter: coderay
 :coderay-linenums-mode: table

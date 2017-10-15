@@ -29,6 +29,13 @@ WiFiClient client;
 
 void setup() {
 
+  //initialize the communication between the board and our computer. Useful to display useful info.
+  Serial.begin(9600);
+
+  while (!Serial) {
+    ;
+  }
+
   //initialize the screen. We dont want to have a battery sign visble.
   screen.init();
   screen.setBatteryVisible(false);

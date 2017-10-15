@@ -14,7 +14,6 @@ last modified: {docdate}
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
 
-
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 ==  !
@@ -29,7 +28,6 @@ It is possible to put an entire small computer (but a small one!) on a board. Th
 
 [.stretch]
 image::rp3.jpg[align="center"]
-
 
 The real size of this object is 8.5cm × 5.6cm (3.3 in × 2.2 in). It costs about 35$.
 
@@ -49,7 +47,6 @@ For example, if you want to create a connected coffee machine (why not?), it wou
 [.stretch]
 image::desktop_computer.jpg[align="center"]
 
-
 ==  !
 Instead, we can add a tiny board like the one above, which will do just what we need:
 maybe have just a small screen and connecting to our mobile phone via wifi (so that coffee can start when our alarm clock gets off, for instance).
@@ -67,7 +64,6 @@ There are litteraly hundreds of different boards. We choose here the Feather Huz
 [link=https://www.adafruit.com/product/3213]
 [.stretch]
 image::huzzah.jpg[align="center"]
-
 
 ==  !
 Why the feather huuzah?

@@ -93,7 +93,7 @@ table.CodeRay td.code>pre{padding:0}
 This function will be executed when called in the <code>loop</code> function that you have written in the file <code>code_for_ar_quality_screen.io</code></p></li></ol></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">char* token = &quot;put your own token here&quot;; <b>(1)</b></code></pre></div></div>
 <div class="colist arabic"><ol><li><p>create the variable <code>token</code>. The value for this variable is the token you can obtain for free on this website: <a href="http://aqicn.org/data-platform/token/#/" class="bare">http://aqicn.org/data-platform/token/#/</a></p></li></ol></div>
-<div class="admonitionblock note"><table><tr><td class="icon"><div class="title">Note</div></td><td class="content">a token is a kind of password (sometimes called an API secret, or a secret token). It certifies your identity when accessing an API.</td></tr></table></div>
+<div class="admonitionblock note"><table><tr><td class="icon"><div class="title"></div></td><td class="content">a token is a kind of password (sometimes called an API secret, or a secret token). It certifies your identity when accessing an API.</td></tr></table></div>
 <div class="listingblock"><div class="content"><pre class="CodeRay"><code class="arduino language-arduino">char* host = &quot;api.waqi.info&quot;; <b>(1)</b>
 String webaddress = &quot;/search/?token=&quot; + String(token) + &quot;&amp;keyword=&quot; + location; <b>(2)</b>
 int httpPort = 80; <b>(3)</b></code></pre></div></div>

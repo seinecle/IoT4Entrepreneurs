@@ -14,7 +14,6 @@ last modified: {docdate}
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
 
-
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
@@ -105,7 +104,6 @@ Experts video are coming. We are finalizing the filming and they will be put onl
 
 [.stretch]
 image::exhibition.jpg[align="center", title="Exihibition at the Cite du Design"]
-
 
 
 

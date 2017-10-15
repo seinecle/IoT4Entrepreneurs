@@ -14,7 +14,6 @@ last modified: {docdate}
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
 
-
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 ==  !
