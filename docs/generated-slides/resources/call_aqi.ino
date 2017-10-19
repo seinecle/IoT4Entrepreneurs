@@ -1,13 +1,13 @@
 void callAQI(String location){
-  
-  // this is a kind of password (sometimes called an API secret, or a secret token) obtained from the website: http://waqi.info/
+
+  // this is a kind of password (sometimes called an API secret, or a secret token) obtained from the website: http://aqicn.org/data-platform/token/#/
   char* token = "ce3c07596e818c0ef99c070ab4464b7abc2f228d";
 
   // this is the first part of the address of the website where we will get the info on the air quality at Saint Etienne:
   char* host = "api.waqi.info";
 
   // This is the last part of the address of the website.
-  String webaddress = "/search/?token=" + String(token) + "&keyword=" + location;  
+  String webaddress = "/search/?token=" + String(token) + "&keyword=" + location;
 
   // to connect to a website, even if we don't see it, we must specify this parameter:
   int httpPort = 80;
@@ -29,7 +29,7 @@ void callAQI(String location){
  client.println();
 
  // we have received the answer (hopefully it is the air quality for Saint Etienne!). We will examine the answer with the method called "readAQIResponse" below
-               
+
   delay(500);
   return;
 }
@@ -37,17 +37,16 @@ void callAQI(String location){
 
 String readAQIResponse(){
    while (client.available()) {
-    
+
     String line = client.readStringUntil('\n');
     Serial.println(line);
     if (line.indexOf("data") < 0) {
       continue;
     }
     DynamicJsonBuffer jsonBuffer (1000);
-    JsonObject& root = jsonBuffer.parseObject(line);    
+    JsonObject& root = jsonBuffer.parseObject(line);
     String aqiValue = root["data"][0]["aqi"];
     return aqiValue;
-    
+
  }
 }
-

@@ -1,6 +1,6 @@
-= IoT for entrepreneurs: Buying components
+= IoT for entrepreneurs: faq
 Clément Levallois <levallois@em-lyon.com>
-2017-07-31
+2017-10-18
 
 last modified: {docdate}
 
@@ -17,47 +17,69 @@ image::EMLyon_logo_corp.png[align="center"]
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 ==  !
-WARNING: *for emlyon students*: components are already provided for this course. Do not buy anything.
+==== The screen shows a lot of white particles
+==  The screen shows a lot of white particles
 
 ==  !
-==  1. Board and screen
-
-- The board is the Huzzah Feather by Adafruit. https://www.adafruit.com/product/3213[Choose the version with stacking headers].
-- The screen is the https://www.adafruit.com/product/2900[FeatherWing OLED] also by Adafruit.
+[.stretch]
+image::pic-2.jpg[align=center]
 
 ==  !
-==  2. Cable
+Explanation: your sketch was not loaded to the object yet.
 
-You will need a https://www.amazon.com/Micro-USB-to-Cable/dp/B004GETLY2[USB to micro USB cable], like the ones used to charge Android phones.
+Solution: make sur you got the sketch to load to your object.
+
+You know it has loaded successfully when the red line in the Arduino go to "100%"
+
+==  !
+==== "Error missing file SSD1306"
+==  "Error missing file SSD1306"
+
+==  !
+Solution:
+
+1. install the library from Sketch -> Include Libraries -> Manage Libraries...
+2. Import this lirary in your sketch via Sketch -> Include Libraries -> find it in the list!!
 
 
 ==  !
-==  3. A breadboard
-
-A breadboard is just a piece of plastic with pin holes. Here it will be useful for the soldering stage.
-
-A bread board costs typically less than 5 dollars: https://www.sparkfun.com/products/12002
+==== "cannot access COM1 / espcomm_open failed"
+==  cannot access COM1 / espcomm_open failed
 
 ==  !
-==  4. Accessories
+Solution:
 
-A https://www.adafruit.com/product/258[lithium battery] and its https://www.adafruit.com/product/1904[charger]
-
-==  !
-==  5. European resellers
-
-Adafruit is the designer of the Huzzah Feather we use in this course (with stacking headers). At the time of writing, Adafruit is the only reseller of this precise model in US or Europe.
+In the Arduino IDE, with your sketch open, go to Tools -> Ports.
 
 ==  !
-(Even though we don't source our material from them, you should know about https://www.sparkfun.com/[Sparkfun], the other major US designer and reseller of small parts for connected objects).
+*if you are on a Mac*:
+
+-> In the list of ports, select the one that has "CP2104" in the name
+
+*if you are on a PC*:
+
+-> In the list of ports, try selecting each port (COM1, COM17... you might have different ones) until the error disappears.
 
 ==  !
+==== Upload complete but nothing on screen
+==  Upload complete but nothing on screen
 
-Here is a list of resellers which are cheaper options when you are based in Europe:
+==  !
+*the wifi ssid you are using incudes spaces or special characters (like: "my super wifi")*
 
-- http://www.exp-tech.de[Exp-tech.de], Germany based.
-- http://boutique.semageek.com/fr/[Semageek], France
-- https://www.coolcomponents.co.uk/[Cool Components], based in UK.
+-> Use a wifi ssid and passwords which are simpler (like: "mysuperwifi")
+
+==  !
+*If you are on a Mac Computer, the adaptator for USB cables does not work*:
+
+==  !
+[.stretch]
+image::pic-2.jpg[align=center]
+
+==  !
+-> try changing the usb cable. Some cables don't work.
+
+
 
 ==  The end
 ==  !

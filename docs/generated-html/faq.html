@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
 <meta name="author" content="Clément Levallois">
-<title>IoT for entrepreneurs: the code explained (part 2)</title>
+<title>IoT for entrepreneurs: faq</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -520,16 +520,19 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article">
 <div id="header">
-<h1>IoT for entrepreneurs: the code explained (part 2)</h1>
+<h1>IoT for entrepreneurs: faq</h1>
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2017-09-04</span>
+<span id="revdate">2017-10-18</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_the_code_explained_steps_by_steps">The code, explained steps by steps</a></li>
+<ul class="sectlevel3">
+<li><a href="#_the_screen_shows_a_lot_of_white_particles">The screen shows a lot of white particles</a></li>
+<li><a href="#_error_missing_file_ssd1306">"Error missing file SSD1306"</a></li>
+<li><a href="#_cannot_access_com1_espcomm_open_failed">"cannot access COM1 / espcomm_open failed"</a></li>
+<li><a href="#_upload_complete_but_nothing_on_screen">Upload complete but nothing on screen</a></li>
 <li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
@@ -538,7 +541,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2017-10-18</p>
+<p>last modified: 2017-10-19</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -547,217 +550,78 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_the_code_explained_steps_by_steps">The code, explained steps by steps</h2>
-<div class="sectionbody">
-<div class="listingblock">
+<div class="sect3">
+<h4 id="_the_screen_shows_a_lot_of_white_particles">The screen shows a lot of white particles</h4>
+<div class="imageblock" style="text-align: center">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="arduino">void callAQI(String location){ <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+<img src="images/pic-2.jpg" alt="pic 2">
 </div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>here starts the definition of the function which will connect the board to a website giving the air pollution in a given place (the paramater <code>location</code>).
-This function will be executed when called in the <code>loop</code> function that you have written in the file <code>code_for_ar_quality_screen.io</code></td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="arduino">char* token = &quot;put your own token here&quot;; <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>create the variable <code>token</code>. The value for this variable is the token you can obtain for free on this website: <a href="http://aqicn.org/data-platform/token/#/" class="bare">http://aqicn.org/data-platform/token/#/</a></td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-a token is a kind of password (sometimes called an API secret, or a secret token). It certifies your identity when accessing an API.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="arduino">char* host = &quot;api.waqi.info&quot;; <i class="conum" data-value="1"></i><b>(1)</b>
-String webaddress = &quot;/search/?token=&quot; + String(token) + &quot;&amp;keyword=&quot; + location; <i class="conum" data-value="2"></i><b>(2)</b>
-int httpPort = 80; <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>the variable <code>host</code> contains the first part of the url (address of the website) where we will retrieve the air quality.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>this is the second part of the url. You see that it includes your token (transformed into a <code>String</code>) and the <code>location</code> where the air pollution is measured.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>to send and receive data via http, even if we don&#8217;t see it, we must specify the port - this is a bit like a gate number. 80 is the default port number for http. Check <a href="https://www.theguardian.com/lifeandstyle/2010/dec/30/port-wine-food-and-drink"><span class="line-through">this</span></a> <a href="https://www.techopedia.com/definition/15709/port-80">this</a> reference.</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="arduino">if (!client.connect(host, httpPort)) { <i class="conum" data-value="1"></i><b>(1)</b>
-  Serial.println(&quot;connection failed&quot;); <i class="conum" data-value="2"></i><b>(2)</b>
-  return ; <i class="conum" data-value="3"></i><b>(3)</b>
-}</code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>the variable "client" (which we have created in the first file) now tries to connect to the website. If it fails (see the <code>!</code> in the if condition), then:</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>send a message saying the connection to the website has failed</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td><code>return</code>, which means stopping there and leaving the function <strong>only if the connection has failed</strong>.</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
-<p>The following lines of code will be executed only if our board could connect to <code><a href="http://api.waqi.info" class="bare">http://api.waqi.info</a></code></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="arduino">client.print(&quot;GET &quot;);<i class="conum" data-value="1"></i><b>(1)</b>
-client.println(&quot; HTTP/1.1&quot;);
-client.print(webaddress); <i class="conum" data-value="2"></i><b>(2)</b>
-client.print(&quot;Host: &quot;);
-client.println(host);
-client.println(&quot;Connection: close&quot;); <i class="conum" data-value="3"></i><b>(3)</b>
-client.println();
-delay(500);
-return; <i class="conum" data-value="4"></i><b>(4)</b>
-}</code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>all the lines of code starting with <code>client.print</code> contribute to connecting your board to the specific page of the website where the air quality for your location is available.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>this specific line is the one where your particular location and token will be taken into account: see the <code>webaddress</code> we defined above.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>the result of the page has been retrieved, the board now disconnects from the website</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>we are done and we can leave the function <code>callAQI</code>. The info retrieved on the website is now stored somewhere in our <code>client</code> variable.</td>
-</tr>
-</table>
+<p>Explanation: your sketch was not loaded to the object yet.</p>
 </div>
 <div class="paragraph">
-<p>To summarize so far:</p>
+<p>Solution: make sur you got the sketch to load to your object.</p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="paragraph">
+<p>You know it has loaded successfully when the red line in the Arduino go to "100%"</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_error_missing_file_ssd1306">"Error missing file SSD1306"</h4>
+<div class="paragraph">
+<p>Solution:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>the function (method) <code>callAQI</code> connected the board to the website <code><a href="http://api.waqi.info" class="bare">http://api.waqi.info</a></code></p>
+<p>install the library from Sketch &#8594; Include Libraries &#8594; Manage Libraries&#8230;&#8203;</p>
 </li>
 <li>
-<p>on this website, it navigated to a page defined by our token and the location where we want to measure the air quality</p>
-</li>
-<li>
-<p>the result (info about the air quality) has been saved in the memory of our board, in the variable <code>client</code> we used for the connection.</p>
+<p>Import this lirary in your sketch via Sketch &#8594; Include Libraries &#8594; find it in the list!!</p>
 </li>
 </ol>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_cannot_access_com1_espcomm_open_failed">"cannot access COM1 / espcomm_open failed"</h4>
 <div class="paragraph">
-<p>We need more steps to extract the info we need from the <code>client</code> variable.
-We could have added extra lines to the function <code>callAQI</code>, but for a pure matter of making our code more readable, we put these lines of code in a separate function that we name <code>readAQIResponse</code>:</p>
+<p>Solution:</p>
 </div>
 <div class="paragraph">
-<p>We now explain step by step what this function does:</p>
+<p>In the Arduino IDE, with your sketch open, go to Tools &#8594; Ports.</p>
 </div>
-<div class="listingblock">
+<div class="paragraph">
+<p><strong>if you are on a Mac</strong>:</p>
+</div>
+<div class="paragraph">
+<p>&#8594; In the list of ports, select the one that has "CP2104" in the name</p>
+</div>
+<div class="paragraph">
+<p><strong>if you are on a PC</strong>:</p>
+</div>
+<div class="paragraph">
+<p>&#8594; In the list of ports, try selecting each port (COM1, COM17&#8230;&#8203; you might have different ones) until the error disappears.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_upload_complete_but_nothing_on_screen">Upload complete but nothing on screen</h4>
+<div class="paragraph">
+<p><strong>the wifi ssid you are using incudes spaces or special characters (like: "my super wifi")</strong></p>
+</div>
+<div class="paragraph">
+<p>&#8594; Use a wifi ssid and passwords which are simpler (like: "mysuperwifi")</p>
+</div>
+<div class="paragraph">
+<p><strong>If you are on a Mac Computer, the adaptator for USB cables does not work</strong>:</p>
+</div>
+<div class="imageblock" style="text-align: center">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="arduino">String readAQIResponse(){ <i class="conum" data-value="1"></i><b>(1)</b>
-   while (client.available()) {<i class="conum" data-value="2"></i><b>(2)</b>
-
-    String line = client.readStringUntil('\n'); <i class="conum" data-value="3"></i><b>(3)</b>
-    Serial.println(line); <i class="conum" data-value="4"></i><b>(4)</b>
-    if (line.indexOf(&quot;data&quot;) &lt; 0) { <i class="conum" data-value="5"></i><b>(5)</b>
-      continue; <i class="conum" data-value="6"></i><b>(6)</b>
-    }
-    DynamicJsonBuffer jsonBuffer (1000); <i class="conum" data-value="7"></i><b>(7)</b>
-    JsonObject&amp; root = jsonBuffer.parseObject(line); <i class="conum" data-value="8"></i><b>(8)</b>
-    String aqiValue = root[&quot;data&quot;][0][&quot;aqi&quot;]; <i class="conum" data-value="9"></i><b>(9)</b>
-    return aqiValue; <i class="conum" data-value="10"></i><b>(10)</b>
- }
-}</code></pre>
+<img src="images/pic-2.jpg" alt="pic 2">
 </div>
 </div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>the function is called <code>readAQUIResponse</code>. When it finishes, it provides (it "returns") a value of type <code>String</code></td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>this <code>while</code> loop will read the info that the <code>client</code> variable received (see just above)</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>in code, the end of a line is marked by a symbol invisible to humans: it is <code>\n</code>. So the first line is all characters until <code>\n</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>To debug (help us understand when and why something is wrong), we print this line on the computer</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>we interested only in the line that contains the word "data". If this word is not present, its index will be negative. See more explanations <a href="http://bf-arduinolab.wikidot.com/docs:string-manipulation">here</a>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="6"></i><b>6</b></td>
-<td>so if "data" is not contained in the line, just move on to the next: ignore the rest of the function and move back to the beginning of the <code>while</code> loop.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="7"></i><b>7</b></td>
-<td>Here, we prepare a new variable which will help us extract the info we need from this line.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="8"></i><b>8</b></td>
-<td>The <code>root</code> variable now contains the line, formatted as a json object (see more on json objects <a href="https://www.impressivewebs.com/what-is-json-introduction-guide-for-beginners/">here</a>).</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="9"></i><b>9</b></td>
-<td>In this <code>root</code> object, we reach for the subelement <code>["data"][0]["aqi"]</code>. This is the value of the air pollution for our location.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="10"></i><b>10</b></td>
-<td>we return this value, leave the <code>while</code> loop and the function.</td>
-</tr>
-</table>
-</div>
+<div class="paragraph">
+<p>&#8594; try changing the usb cable. Some cables don&#8217;t work.</p>
 </div>
 </div>
 <div class="sect1">
@@ -799,7 +663,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-10-18 13:59:26 CEST
+Last updated 2017-10-19 14:44:25 CEST
 </div>
 </div>
 </body>

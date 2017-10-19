@@ -13,7 +13,6 @@ last modified: {docdate}
 :title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
-{nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
@@ -77,7 +76,6 @@ We will also need a soldering equipment:
 
 //ST: !
 image::soldering-station.jpg["Soldering station" width=400]
-{nbsp} +
 
 
 //ST: !
@@ -111,7 +109,6 @@ The evaluation is in two steps:
 Grading is as follows:
 
 image::grading-scale.png["Grading scale"]
-{nbsp} +
 
 
 //ST: !
@@ -139,7 +136,6 @@ If you look for a very complete, in-depth reference on IoT for entrepreneurs I w
 //ST: !
 
 image::oreilly-iot.jpg[align="center", title="Entreprise IoT"]
-{nbsp} +
 
 //ST: !
 

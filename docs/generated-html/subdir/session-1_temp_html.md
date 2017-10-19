@@ -13,7 +13,6 @@ last modified: {docdate}
 :title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
-{nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
@@ -108,7 +107,6 @@ Experts video are coming. We are finalizing the filming and they will be put onl
 //ST: 4. Related to this course
 
 image::exhibition.jpg[align="center", title="Exihibition at the Cite du Design"]
-{nbsp} +
 
 
 

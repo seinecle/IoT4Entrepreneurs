@@ -14,7 +14,6 @@ last modified: {docdate}
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
 
-
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 ==  !
@@ -75,7 +74,6 @@ We will also need a soldering equipment:
 image::soldering-station.jpg["Soldering station" width=400]
 
 
-
 ==  !
 
 *emlyon business school students*: you can visit the Makers Labs on our campuses for soldering (have you visited http://makerslab.em-lyon.com/[their website]?).
@@ -109,7 +107,6 @@ Grading is as follows:
 image::grading-scale.png["Grading scale"]
 
 
-
 ==  !
 Each video should last about 3 minutes and *less than 5 minutes in any case*.
 The videos should be uploaded online (on Youtube, Vimeo, DailyMotion...).
@@ -135,7 +132,6 @@ If you look for a very complete, in-depth reference on IoT for entrepreneurs I w
 
 [.stretch]
 image::oreilly-iot.jpg[align="center", title="Entreprise IoT"]
-
 
 ==  !
 

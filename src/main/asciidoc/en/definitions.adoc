@@ -179,7 +179,7 @@ The connected object can move, compute things, make sound or light... everything
 ====
 
 //ST: !
-[start=1]
+[start=4]
 d. also interesting: the object can connect... to another object
 
 This is called a "swarm": when multiple objects can coordinate their actions by connecting with each other, instead of connected separately to a central point.

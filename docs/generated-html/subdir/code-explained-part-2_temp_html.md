@@ -15,7 +15,6 @@ last modified: {docdate}
 :title-logo-image: EMLyon_logo_corp.png[align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
-{nbsp} +
 
 == The code, explained steps by steps
 //[source,arduino,linenums,highlight='1-2']

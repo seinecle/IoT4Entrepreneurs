@@ -13,7 +13,6 @@ last modified: {docdate}
 :title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
-{nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
