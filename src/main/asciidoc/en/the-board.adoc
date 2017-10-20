@@ -33,7 +33,7 @@ image::rp3.jpg[align="center"]
 The real size of this object is 8.5cm × 5.6cm (3.3 in × 2.2 in). It costs about 35$.
 
 //ST: !
-This picture represents a "Raspberry Pi", where we see the green plastic board, electronic components on it: this is a microcontroller. As a shorthand, we will continue to call this a "board".
+This picture represents a https://www.raspberrypi.org/products/[Raspberry Pi], where we see the green plastic board, electronic components on it: this is a microcontroller. As a shorthand, we will continue to call this a "board".
 
 //ST: !
 == What are boards for?
@@ -60,7 +60,7 @@ And it will be cheap (just add 35$ to turn your coffee machine into a connected 
 //ST: Which board to choose?
 //ST: !
 
-There are litteraly hundreds of different boards. We choose here the Feather Huzzah:
+There are litteraly hundreds of different boards. We choose here the https://www.adafruit.com/product/3213[Feather Huzzah]:
 
 .The Feather Huzzah
 [link=https://www.adafruit.com/product/3213]
@@ -69,7 +69,7 @@ image::huzzah.jpg[align="center"]
 //ST: !
 Why the feather huuzah?
 
-- it is really tiny! 2 in x 0.9 in (51mm x 23mm)
+- it is really tiny! 2 inches x 0.9 inch (51mm x 23mm)
 - it can connect to Wifi
 - it is cheap: 20$
 
