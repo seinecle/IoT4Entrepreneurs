@@ -65,15 +65,18 @@ In the Arduino IDE, with your sketch open, go to Tools -> Ports.
 //ST: Upload complete but nothing on screen
 
 //ST: !
-*the wifi ssid you are using incudes spaces or special characters (like: "my super wifi")*
+*Possible causes:*
+
+//ST: !
+*the wifi ssid is invalid:* you are using incudes spaces or special characters (like: "my super wifi")*
 
 -> Use a wifi ssid and passwords which are simpler (like: "mysuperwifi")
 
 //ST: !
-*If you are on a Mac Computer, the adaptator for USB cables does not work*:
+*If you are on a Mac Computer*, the adaptator for USB cables (white cable on the picture below) does not work:
 
 //ST: !
-image::pic-2.jpg[align=center]
+image::pic-1.jpg[align=center]
 
 //ST: !
 -> try changing the usb cable. Some cables don't work.
