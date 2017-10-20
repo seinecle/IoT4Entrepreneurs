@@ -68,7 +68,7 @@ In the Arduino IDE, with your sketch open, go to Tools -> Ports.
 *Possible causes:*
 
 //ST: !
-*the wifi ssid is invalid:* you are using incudes spaces or special characters (like: "my super wifi")*
+*the wifi ssid is invalid:* the name of the ssid you are using includes spaces or special characters (like: "my super wifi")*
 
 -> Use a wifi ssid and passwords which are simpler (like: "mysuperwifi")
 
