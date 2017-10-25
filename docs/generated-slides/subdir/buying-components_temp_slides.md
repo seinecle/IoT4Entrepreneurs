@@ -39,7 +39,7 @@ A breadboard is just a piece of plastic with pin holes. Here it will be useful f
 A bread board costs typically less than 5 dollars: https://www.sparkfun.com/products/12002
 
 ==  !
-==  4. Accessories
+==  4. Optional accessories
 
 A https://www.adafruit.com/product/258[lithium battery] and its https://www.adafruit.com/product/1904[charger]
 

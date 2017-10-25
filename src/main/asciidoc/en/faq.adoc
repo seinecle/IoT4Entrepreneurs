@@ -1,7 +1,6 @@
 = IoT for entrepreneurs: faq
 Clément Levallois <levallois@em-lyon.com>
 2017-10-18
-
 last modified: {docdate}
 
 :icons!:
@@ -32,13 +31,17 @@ Solution: make sur you got the sketch to load to your object.
 You know it has loaded successfully when the red line in the Arduino go to "100%"
 
 //ST: !
-==== "Error missing file SSD1306"
-//ST: "Error missing file SSD1306"
+==== "fatal error: Adafruit_SSD1306.h: No such file or directory"
+//ST: "fatal error: Adafruit_SSD1306.h: No such file or directory"
 
 //ST: !
 Solution:
 
-1. install the library from Sketch -> Include Libraries -> Manage Libraries...
+1. install the library from Sketch -> Include Library -> Manage Libraries: type SSD1306 in the search bar and find it.
+
+
+IMPORTANT: In the list of SSD1306 Libraries, make sure you install the one by *Adafruit*, not Acrobotic.
+
 2. Import this lirary in your sketch via Sketch -> Include Libraries -> find it in the list!!
 
 
@@ -49,12 +52,21 @@ Solution:
 //ST: !
 Solution:
 
-In the Arduino IDE, with your sketch open, go to Tools -> Ports.
-
 //ST: !
 *if you are on a Mac*:
 
--> In the list of ports, select the one that has "CP2104" in the name
+a. New / recent Mac only: make sure you installed this:
+
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+
+b. Older Mac (Mac OS 10.12.6 or older): make sure you installed this instead:
+
+http://community.silabs.com/t5/Interface-Knowledge-Base/Legacy-OS-Software-and-Driver-Packages/ta-p/182585
+
+c. All Macs: in the Arduino IDE, with your sketch open, go to `Tools` and put your mouse above (don't click!) `Port:`. Then select:
+
+-> In the list of ports, select the one that has "/dev/cu.SLAB_USBtoUART" in the name
+
 
 *if you are on a PC*:
 
