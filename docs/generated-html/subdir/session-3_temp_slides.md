@@ -80,8 +80,9 @@ You practiced something different. Building this connect object, you did:
 
 ==  3. An example of a business model with IoT
 
-Withings is a company born in France in 2008. It designs connected objects in a B2C market:
 ==  !
+Withings is a company born in France in 2008. It designs connected objects for a B2C market:
+
 
 ==  !
 [.stretch]
@@ -113,25 +114,24 @@ image::nokia-2.png[align="center",title="Nokia Health solution in a B2B market"]
 [.stretch]
 image::nokia-3.png[align="center",title="Better health at the workplace as a value proposition"]
 
-Note: this is the latest development of an old trend, which is the "servicing economy":
 ==  !
+Note: this is the latest development of an old trend, which is the "servicing economy":
 
 ==  !
 [.stretch]
-image::photocopier.jpg[align="center",title="Better health at the workplace as a value proposition"]
+image::photocopier.jpg[align="center",title="From selling photocopiers to printing services"]
 
 ==  3. What to do next?
 
-
 ==  !
 ==== 1. Publishing best videos
+
 ==  !
 Goal of the http://data.em-lyon.com[Data R&D Institute]: pushing forward and publicly what emlyon business school does in data science.
 
 ==  !
 [.stretch]
 image::data-institute.png[align="center",title="Data R&D Institute front page"]
-
 
 ==  !
 ==== 2. You must continue developing an interest in IoT x dataviz
@@ -149,6 +149,7 @@ To stay updated on these topics, contributions welcome:
 -> http://seinecle.github.io/mk99
 
 ==  The end
+
 ==  !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].

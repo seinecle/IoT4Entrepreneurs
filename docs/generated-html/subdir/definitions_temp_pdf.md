@@ -132,7 +132,7 @@ A connected object can just broadcast some information without receiving anythin
 //ST: !
 - the object sends data automatically, like these connected beehives build by http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c19.0.1041.1041/14723479_163242737474300_6697748361329508352_n.jpg[emlyon students] and now producing honey https://makersbeehives.herokuapp.com/[on the roof of the school]. They send pictures / temperature measures:
 
-
+image::.png[align="center"]
 
 //ST:!
 If the object is sending data, it supposes it has a *sensor* to measure things around it, so that it can then send this measure.

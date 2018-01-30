@@ -16,8 +16,8 @@ image::EMLyon_logo_corp.png[align="center"]
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 //ST: !
-==== The screen shows a lot of white particles
-//ST: The screen shows a lot of white particles
+==== 1. The screen shows a lot of white particles
+//ST: 1. The screen shows a lot of white particles
 
 //ST: !
 image::pic-2.jpg[align=center]
@@ -30,23 +30,24 @@ Solution: make sur you got the sketch to load to your object.
 You know it has loaded successfully when the red line in the Arduino go to "100%"
 
 //ST: !
-==== "fatal error: Adafruit_SSD1306.h: No such file or directory"
-//ST: "fatal error: Adafruit_SSD1306.h: No such file or directory"
+==== 2. "fatal error: Adafruit_SSD1306.h: No such file or directory"
+//ST: 2. "fatal error: Adafruit_SSD1306.h: No such file or directory"
 
 //ST: !
 Solution:
 
+[start=1]
 1. install the library from Sketch -> Include Library -> Manage Libraries: type SSD1306 in the search bar and find it.
-
 
 IMPORTANT: In the list of SSD1306 Libraries, make sure you install the one by *Adafruit*, not Acrobotic.
 
+[start=2]
 2. Import this lirary in your sketch via Sketch -> Include Libraries -> find it in the list!!
 
 
 //ST: !
-==== "cannot access COM1 / espcomm_open failed"
-//ST: cannot access COM1 / espcomm_open failed
+==== 3. "cannot access COM1 / espcomm_open failed"
+//ST: 3. "cannot access COM1 / espcomm_open failed"
 
 //ST: !
 Solution:
@@ -54,14 +55,17 @@ Solution:
 //ST: !
 *if you are on a Mac*:
 
+[start=1]
 a. New / recent Mac only: make sure you installed this:
 
 https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 
+[start=2]
 b. Older Mac (Mac OS 10.12.6 or older): make sure you installed this instead:
 
 http://community.silabs.com/t5/Interface-Knowledge-Base/Legacy-OS-Software-and-Driver-Packages/ta-p/182585
 
+[start=3]
 c. All Macs: in the Arduino IDE, with your sketch open, go to `Tools` and put your mouse above (don't click!) `Port:`. Then select:
 
 -> In the list of ports, select the one that has "/dev/cu.SLAB_USBtoUART" in the name
@@ -72,8 +76,8 @@ c. All Macs: in the Arduino IDE, with your sketch open, go to `Tools` and put yo
 -> In the list of ports, try selecting each port (COM1, COM17... you might have different ones) until the error disappears.
 
 //ST: !
-==== Upload complete but nothing on screen
-//ST: Upload complete but nothing on screen
+==== 4. Upload complete but nothing on screen
+//ST: 4. Upload complete but nothing on screen
 
 //ST: !
 *Possible causes:*
@@ -91,8 +95,6 @@ image::pic-1.jpg[align=center]
 
 //ST: !
 -> try changing the usb cable. Some cables don't work.
-
-
 
 == The end
 //ST: The end
