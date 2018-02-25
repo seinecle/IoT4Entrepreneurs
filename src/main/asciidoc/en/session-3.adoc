@@ -81,8 +81,8 @@ You practiced something different. Building this connect object, you did:
 3. Ergonomics: is it simple, easy and comfortable to use? Does it lead to repeat use?
 
 
-== 3. An example of a business model with IoT
-//ST: 3. An example of a business model with IoT
+== 3. An example of a business model based on IoT
+//ST: 3. An example of a business model based on IoT
 
 //ST: !
 Withings is a company born in France in 2008. It designs connected objects for a B2C market:
