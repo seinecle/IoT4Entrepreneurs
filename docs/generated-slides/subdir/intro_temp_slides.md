@@ -38,6 +38,7 @@ video::llgCU1lsTI0[youtube]
 == !
 
 
+
 == !
 At the heart of this change, there is the fact that objects get *traversed by data*.
 
@@ -96,9 +97,8 @@ We will also need a soldering equipment:
 
 == !
 [.stretch]
-image::soldering-station.jpg["Soldering station" width=400]
+image::soldering-station.jpg[align="center",title="Soldering station",pdfwidth="50%", book="keep"]
 == !
-
 
 
 
@@ -117,15 +117,65 @@ Or better, you can find a Makers Lab near you and ask for their help! http://the
 == !
 Finally, you will need a micro usb cable to plug your object to your computer. You probably have one already if you have an Android smartphone. Shapes and formats for micro USB keep changing. Here we need the classic format (so, not reversible) https://www.amazon.com/Rampow-Cable-Braided-Samsung-Charging/dp/B01GJC4YMC/ref=sr_1_1?s=electronics&ie=UTF8&qid=1501582580&sr=1-1-spons&keywords=micro+usb+cable&psc=1[like this one].
 
-== 5. Evaluation of the course
+== 5. Organization: this is a blended course
+== !
+- Lessons are a mix of documents and videos.
+- Documents and videos are available on this website: https://emlyon.github.io/IoT4Entrepreneurs/
+- So this is "distance learning": build your object by following the videos, read the documents!
+
+
+== !
+Example of a video on the website:
+
+
+== !
+[.stretch]
+video::C6vhPETtXN8[youtube]
+== !
+
+
+3 in-class sessions:
+- 1st (today): Introduction
+- 2nd (check the date on the syllabus): IoT and their business models
+- 3rd (check the date on the syllabus): business game: how to create economic value with IoT? Using the DATOM method.
+
+== 6. Evaluation of the course
 == !
 The evaluation is in two steps:
 
 
 == !
-- a video where you show your object, which should be working.
+- GROUP assigment (2 students per group). 50% of the final grade:
+-> a video where you show your object, which should be working.
 You explain in this video the key difficulty you faced.
-- a video where you discuss a connected object on the market (no need to buy it!). You explain 1) the function it performs, 2) the business model behind it, and 3) secuirty issues raised by the object.
+
+Example of a good video:
+
+
+== !
+[.stretch]
+video::155B6dSZEfs[youtube]
+== !
+
+
+
+== !
+Note: to get a 10/10, you need to add a bonus feature to the object.
+
+Examples: extra coding, adding a 3D-printed case...
+
+
+== !
+- INDIVIDUAL assignment. 50% of the grade:
+-> a video where you discuss a connected object on the market (no need to buy it!). You explain 1) the function it performs, 2) the business model behind it, and 3) secuirty issues raised by the object.
+
+Example of a good video:
+
+== !
+[.stretch]
+video::5TIKaf6hKMg[youtube]
+== !
+
 
 
 == !
@@ -133,7 +183,7 @@ Grading is as follows:
 
 == !
 [.stretch]
-image::grading-scale.png["Grading scale"]
+image::grading-scale.jpg["Grading scale"]
 == !
 
 
@@ -157,7 +207,7 @@ Make the video "unlisted" if you prefer.
 *Don't send me video files as I will not open them!*
 
 
-== 6. Essential readings and to go further
+== 7. Essential readings and to go further
 == !
 Access https://www.pinterest.fr/seinecle/internet-of-things/[this board on Pinterest] for a collection of documents on the Internet of things from a business point of view.
 

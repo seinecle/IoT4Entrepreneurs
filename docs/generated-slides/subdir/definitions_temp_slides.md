@@ -95,15 +95,14 @@ Connected objects for the industry: all kind of smart sensors and small connecte
 
 The goal is to eliminate waste and increase speed by controlling and monitoring their processes more closely thanks to these devices.
 
-Examples of companies providing these services are http://www.ripplesiot.com/[Ripples], Benard Marr[Pentaho], or https://www.ptc.com/en/internet-of-things[PTC].
+Examples of companies providing these services are http://www.ripplesiot.com/[Ripples], Pentaho, or https://www.ptc.com/en/internet-of-things[PTC].
 
 
 == !
-What makes an object part of the Internet of things? 3 things:
+What makes an object part of the Internet of things?
 
 == 4. The anatomy of a connected object
 == !
-
 ==== a. the object can receive and send data, like this Thermostat:
 == !
 .The Nest thermostat
@@ -168,6 +167,7 @@ And it is also used in logistics to track shipping items:
 [.stretch]
 video::Q5VDEdF3cBc[youtube]
 == !
+
 
 ==== c. The object can be just a receiver
 == !

@@ -75,7 +75,7 @@ Connected objects for the industry: all kind of smart sensors and small connecte
 
 The goal is to eliminate waste and increase speed by controlling and monitoring their processes more closely thanks to these devices.
 
-Examples of companies providing these services are http://www.ripplesiot.com/[Ripples], Benard Marr[Pentaho], or https://www.ptc.com/en/internet-of-things[PTC].
+Examples of companies providing these services are http://www.ripplesiot.com/[Ripples], Pentaho, or https://www.ptc.com/en/internet-of-things[PTC].
 
 //+
 What makes an object part of the Internet of things?
