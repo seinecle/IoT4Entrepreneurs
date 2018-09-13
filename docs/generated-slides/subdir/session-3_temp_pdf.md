@@ -13,6 +13,7 @@ last modified: {docdate}
 :title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
+{nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
@@ -80,14 +81,16 @@ You practiced something different. Building this connect object, you did:
 3. Ergonomics: is it simple, easy and comfortable to use? Does it lead to repeat use?
 
 
-== 3. An example of a business model with IoT
-//ST: 3. An example of a business model with IoT
+== 3. An example of a business model based on IoT
+//ST: 3. An example of a business model based on IoT
 
-Withings is a company born in France in 2008. It designs connected objects in a B2C market:
 //ST: !
+Withings is a company born in France in 2008. It designs connected objects for a B2C market:
+
 
 //ST: !
 image::withings-1.png[align="center",title="Withings making the headlines in 2014"]
+{nbsp} +
 
 
 //ST: !
@@ -95,40 +98,45 @@ In 2016, Nokia acquires Withings:
 
 //ST: !
 image::withings-nokia-1.png[align="center",title="Withings acquired by Nokia"]
+{nbsp} +
 
 //ST: !
 In 2017, Nokia fades away the Withings brand and develops its digital health solutions:
 
 //ST: !
 image::withings-nokia-2.png[align="center",title="Withings retires as a brand, Nokia health develops"]
+{nbsp} +
 
 //ST: !
 The value proposal of Nokia's solution is not to sell more Iot. It consists in providing servicing, enabled by IoT.
 
 //ST: !
 image::nokia-2.png[align="center",title="Nokia Health solution in a B2B market"]
+{nbsp} +
 
 //ST: !
 image::nokia-3.png[align="center",title="Better health at the workplace as a value proposition"]
+{nbsp} +
 
+//ST: !
 Note: this is the latest development of an old trend, which is the "servicing economy":
-//ST: !
 
 //ST: !
-image::photocopier.jpg[align="center",title="Better health at the workplace as a value proposition"]
+image::photocopier.jpg[align="center",title="From selling photocopiers to printing services"]
+{nbsp} +
 
 == 3. What to do next?
 //ST: 3. What to do next?
 
-
 //ST: !
 ==== 1. Publishing best videos
+
 //ST: !
 Goal of the http://data.em-lyon.com[Data R&D Institute]: pushing forward and publicly what emlyon business school does in data science.
 
 //ST: !
 image::data-institute.png[align="center",title="Data R&D Institute front page"]
-
+{nbsp} +
 
 //ST: !
 ==== 2. You must continue developing an interest in IoT x dataviz
@@ -138,6 +146,7 @@ There is a convergence between IoT, data science and AI. See the https://blog.go
 
 //ST: !
 image::ayt.png[align="center",title="The AYT Kit by Google"]
+{nbsp} +
 
 //ST: !
 To stay updated on these topics, contributions welcome:
@@ -146,11 +155,12 @@ To stay updated on these topics, contributions welcome:
 
 == The end
 //ST: The end
+
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: http://www.clementlevallois.net

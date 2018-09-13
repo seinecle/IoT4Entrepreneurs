@@ -13,9 +13,14 @@ last modified: {docdate}
 :coderay-linenums-mode: table
 :title-logo-image: EMLyon_logo_corp.png[align="center"]
 
+== !
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
+== !
 
+
+== The code, explained steps by steps
+== !
 //[source,arduino,linenums,highlight='1-2']
 [source,arduino]
 ----
@@ -115,12 +120,14 @@ String readAQIResponse(){ //<1>
 
 
 
-==  The end
-==  !
+== The end
+== !
+//ST: The end
+//ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: http://www.clementlevallois.net

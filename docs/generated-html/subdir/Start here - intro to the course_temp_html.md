@@ -13,6 +13,7 @@ last modified: {docdate}
 :title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
 
 image::gephi-logo-2010-transparent.png[width="450" align="center"]
+{nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
@@ -52,7 +53,8 @@ When finishing this tutorial, you should be able to:
 //ST: terminology to discuss networks
 //ST: !
 
-image::https://docs.google.com/drawings/d/1h8N-UBY7dO6Q7mXCbPY78ITfJx1Mti9YD2ScnVu4oHA/pub?w=960&h=720[align="center",title="terminology for networks"]
+image::terminology-for-networks.png[align="center",title="terminology for networks"]
+{nbsp} +
 
 
 == download a network file
@@ -84,6 +86,7 @@ The file name ends with ".gexf", which just means this is a text file where the 
 - find `miserables.gexf` on your computer and open it
 
 image::en/gephi-welcome-screen-open-graph-en.png[align="center", title="welcome screen"]
+{nbsp} +
 
 == read the report after opening a file
 
@@ -91,6 +94,7 @@ image::en/gephi-welcome-screen-open-graph-en.png[align="center", title="welcome 
 A report window will open, giving you basic info on the network you opened:
 
 image::en/opening-file-report-en.png[align="center", title="report window"]
+{nbsp} +
 
 //ST: !
 This tells you that the network comprises 74 characters, connected by 248 links.
@@ -106,6 +110,7 @@ Click on `OK` to see the graph in Gephi.
 //ST: !
 
 image::en/project-initial-view.png[align="center", title="initial view when opening a graph"]
+{nbsp} +
 
 This is how the network appears in Gephi. Not very useful! Let's examine what we have here.
 
@@ -113,7 +118,8 @@ This is how the network appears in Gephi. Not very useful! Let's examine what we
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1MVPuD8fYe8bEJJJ67heQjrMidA7vyizGc37p4y5LRH8/pub?w=960[align="center", title="the 3 main screens in Gephi"]
+image::the-3-main-screens-in-Gephi.png[align="center", title="the 3 main screens in Gephi"]
+{nbsp} +
 
 //ST: !
 Gephi has 3 main screens:
@@ -126,7 +132,8 @@ What we see here is the Overview.
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1XwpvulXoyiK3nBbxFiCFisH6_pg9P9us9LnZJvzlDz4/pub?w=960[align="center", title="Filters and statistics panels in Gephi"]
+image::Filters-and-statistics-panels-in-Gephi.png[align="center", title="Filters and statistics panels in Gephi"]
+{nbsp} +
 
 //ST: !
 
@@ -138,7 +145,8 @@ In the Overview, the graph is shown at the center. Around it, several panels hel
 5. "Statistics", where we can compute metrics on the network
 
 //ST: !
-image::https://docs.google.com/drawings/d/1J4wCFaXwIaRmiiG7t69s8HmhA0hnR0Sp0hwgOFquFdw/pub?w=1439&h=787[align="center", title="Appearance and layout panels in Gephi"]
+image::Appearance-and-layout-panels-in-Gephi.png[align="center", title="Appearance and layout panels in Gephi"]
+{nbsp} +
 
 
 //ST: !
@@ -149,7 +157,8 @@ image::https://docs.google.com/drawings/d/1J4wCFaXwIaRmiiG7t69s8HmhA0hnR0Sp0hwgO
 7. "Layouts", where we can apply automated procedures to change the position of the network
 
 //ST: !
-image::https://docs.google.com/drawings/d/1IkRBs4doz5fZWovao-yJFBR9hg7RO_BtGJwhUF9yoJk/pub?w=1435&h=774[align="center", title="3 groups of icons"]
+image::3-groups-of-icons.png[align="center", title="3 groups of icons"]
+{nbsp} +
 
 //ST: !
 
@@ -166,7 +175,8 @@ image::https://docs.google.com/drawings/d/1IkRBs4doz5fZWovao-yJFBR9hg7RO_BtGJwhU
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1o-J7Uce1okDdIN_IgvZaH4MdGjn74_ChTlXo-nxS-w4/pub?w=960&h=720[align="center", title="showing node labels"]
+image::showing-node-labels.png[align="center", title="showing node labels"]
+{nbsp} +
 
 
 == layout ("spatialize") the network
@@ -175,17 +185,20 @@ image::https://docs.google.com/drawings/d/1o-J7Uce1okDdIN_IgvZaH4MdGjn74_ChTlXo-
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1fD_AdsP3SqV5CENMDmMpt6ZLYOAgLsDDYxv2fJr7R6E/pub?w=960&h=720[align="center", title="selecting the force atlas 2 layout"]
+image::selecting-the-force-atlas-2-layout.png[align="center", title="selecting the force atlas 2 layout"]
+{nbsp} +
 
 //ST: !
 
 [[force-atlas-2-parameters]]
-image::https://docs.google.com/drawings/d/1TnbclWXKFJiYUOJTHAl2Fyh5j3KgxV5TyLGyN1Gnn7k/pub?w=960&h=720[align="center", title="changing a few parameters and launching the layout"]
+image::changing-a-few-parameters-and-launching-the-layout.png[align="center", title="changing a few parameters and launching the layout"]
+{nbsp} +
 
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1RkRn4Q8Ln-C1qJCiuBp2FN51GavaaLlm17QnVOO_av4/pub?w=960&h=720[align="center", title="result of Force Atlas 2 layout"]
+image::result-of-Force-Atlas-2-layout.png[align="center", title="result of Force Atlas 2 layout"]
+{nbsp} +
 
 == visualize the properties of the nodes
 
@@ -203,23 +216,27 @@ Now, we will see how to make this property ("Gender") visible.
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1mDTOUanUkOa0ND8wn3tuwM54pqYXN6RApWkZTxSpEiI/pub?w=954&h=524[align="center",title="Switching the view to the data laboratory"]
+image::Switching-the-view-to-the-data-laboratory.png[align="center",title="Switching the view to the data laboratory"]
+{nbsp} +
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1wIubWP6KX6oaz3pd7SQYziWR_2hK2KIhH0gAFwn3rEk/pub?w=758&h=431[align="center",title="We see there is a Gender attribute for each character."]
+image::We-see-there-is-a-Gender-attribute-for-each-character..png[align="center",title="We see there is a Gender attribute for each character."]
+{nbsp} +
 
 //ST: !
 
 We will color the nodes based on their gender. To do that, we select `Gender` in the `Appearance` panel:
 
-image::https://docs.google.com/drawings/d/1VdIaYCfuMAF5Tk3EaCak-Z0M9GsIuPpjxc6RWi0FELs/pub?w=758&h=431[align="center",title="Coloring nodes according to their gender"]
+image::Coloring-nodes-according-to-their-gender.png[align="center",title="Coloring nodes according to their gender"]
+{nbsp} +
 
 //ST: !
 
 The result:
 
 image::appearance-miserables-result.png[align="center",title="After coloring characters according to their gender"]
+{nbsp} +
 
 == prettify the network for enhanced readability
 
@@ -247,6 +264,7 @@ Let's fix these issues.
 In the layout panel, choose "Label Adjust" or "Noverlap": these layouts will move the nodes just so that the Labels stop overlapping:
 
 image::en/choosing-a-label-adjust-algo-en.png[align="center",title="Noverlap or Label Adjust will help you"]
+{nbsp} +
 
 Don't forget to click on "Run" to apply these layouts.
 
@@ -255,12 +273,14 @@ Don't forget to click on "Run" to apply these layouts.
 Open the bottom panel of Gephi by clicking on tiny arrow head (1). Then select "nodes" (2), then move the slider (3).
 
 //ST: !
-image::https://docs.google.com/drawings/d/13dOYkyzY4dKMIDrSj59NFF5GftZD55eRC26HZ8jn2RM/pub?w=758&h=431[align="center",title="Adjusting label size"]
+image::Adjusting-label-size.png[align="center",title="Adjusting label size"]
+{nbsp} +
 
 //ST: !
 ==== 4. Adjusting the thickness of the links
 
-image::https://docs.google.com/drawings/d/13Sdd6ss52TgXoG1i4CkaGw3aHap-WWDvpJjosQJSyls/pub?w=758&h=431[align="center",title="Adjusting edge thickness"]
+image::Adjusting-edge-thickness.png[align="center",title="Adjusting edge thickness"]
+{nbsp} +
 
 == computing the centrality of the nodes
 
@@ -293,18 +313,21 @@ Another measure is `betweenness centrality`. This one is more tricky.
 
 Gephi computes it for you. Find "Network diameter" in the statistics panel and click "run":
 
-image::https://docs.google.com/drawings/d/1T66-VP25_nvxCvmnpQWUraCYT3Vxi0oW3f-TBZDtYPM/pub?w=758&h=415[align="center",title="Computing betweenness centrality"]
+image::Computing-betweenness-centrality.png[align="center",title="Computing betweenness centrality"]
+{nbsp} +
 
 //ST: !
 This will open a window with parameters (explained in a more advanced tutorials). Click "OK":
 
-image::https://docs.google.com/drawings/d/1OmI-MugkNhDR67BR0ns5injN1FoVhm1IjXXzI5Qv4NQ/pub?w=411&h=232[align="center",title="Parameters for the computation of betweenness centrality"]
+image::Parameters-for-the-computation-of-betweenness-centrality.png[align="center",title="Parameters for the computation of betweenness centrality"]
+{nbsp} +
 
 
 //ST: !
 A report window opens (also explained in a other tutorials). Close it.
 
-image::https://docs.google.com/drawings/d/1_eS17piFaVKG4cXL1TAxIh4sSL5ubg7_-6AziUrjJl8/pub?w=300[align="center",title="Report after the computation of betweenness centrality"]
+image::Report-after-the-computation-of-betweenness-centrality.png[align="center",title="Report after the computation of betweenness centrality"]
+{nbsp} +
 
 Now we can visualize this information.
 
@@ -319,35 +342,42 @@ This would allow for a very quick visual appreciation of which nodes are the mos
 //ST: !
 First, let's switch to the data laboratory to see how Gephi stored the "betweenness centrality" of each node:
 
-image::https://docs.google.com/drawings/d/1mDTOUanUkOa0ND8wn3tuwM54pqYXN6RApWkZTxSpEiI/pub?w=954&h=524[align="center",title="Switching the view to the data laboratory"]
+image::Switching-the-view-to-the-data-laboratory.png[align="center",title="Switching the view to the data laboratory"]
+{nbsp} +
 
 //ST: !
 
 When we ran "Network Diameter" in the statistics panel, Gephi has actually computed many kinds of centralities (not just "betweenness centrality"):
 
-image::https://docs.google.com/drawings/d/1anoYqTntqA4ZYuS035GQQEDwPwbIr_kk1oQ6wRVfkPM/pub?w=954&h=525[align="center",title="Different centrality measures visible in the data laboratory"]
+image::Different-centrality-measures-visible-in-the-data-laboratory.png[align="center",title="Different centrality measures visible in the data laboratory"]
+{nbsp} +
 
 //ST: !
 To resize the nodes according to the value of their betweenness centrality, we use the `Appearance` panel:
 
 CAUTION: make sure you select the correct options
 
-image::https://docs.google.com/drawings/d/13XItrvTkrJSQ6MzQTLe7ZugrpxfBJMBi0qzsVbH_JeQ/pub?w=954&h=525[align="center",title="Ranking node sizes by centrality"]
+image::Ranking-node-sizes-by-centrality.png[align="center",title="Ranking node sizes by centrality"]
+{nbsp} +
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1EeA-5wfTuHKc8jQL49afXZb-LQl1Rtss49mE11U8Ako/pub?w=954&h=525[align="center",title="Selecting the minimum and maximum sizes of nodes"]
+image::Selecting-the-minimum-and-maximum-sizes-of-nodes.png[align="center",title="Selecting the minimum and maximum sizes of nodes"]
+{nbsp} +
 
 //ST: !
 
 image::ranking-centrality-miserables-3--en.png[align="center",title="Result of the ranking"]
+{nbsp} +
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/1G9s36WY2PDpYpUxl0qYgA_ccqLpAoOd6kap8X8QSKog/pub?w=954&h=525[align="center",title="Resizing labels to reflect their node's size"]
+image::Resizing-labels-to-reflect-their-node's-size.png[align="center",title="Resizing labels to reflect their node's size"]
+{nbsp} +
 
 //ST: !
 image::result-label-resizing-en.png[align="center",title="Result of the label resizing"]
+{nbsp} +
 
 == exporting a network as a picture
 
@@ -357,20 +387,23 @@ image::result-label-resizing-en.png[align="center",title="Result of the label re
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/13nw3KJL1vHc2zhFr3A5WB3za6GFrzpxQ8kZjujNLIqM/pub?w=954&h=525[align="center",title="Open the configuration panel for screenshots"]
+image::Open-the-configuration-panel-for-screenshots.png[align="center",title="Open the configuration panel for screenshots"]
+{nbsp} +
 
 //ST: !
 
 Select the maximum value for anti-aliasing, and multiply values for width and height for higher resolution. For example, resolution x 3 is width = 3072 and height = 2304
 
 image::en/configuration-screenshot-en.png[align="center",title="The configuration panel for screenshots"]
+{nbsp} +
 
 //ST: 2. exporting a pdf or svg picture
 
 //ST: !
 Let's switch to the preview panel:
 
-image::https://docs.google.com/drawings/d/1j0dbw5wwOccDoUEFk8XBsCaKi6Ms9bZlqqOM1MgdDog/pub?w=954&h=525[align="center",title="Switching to the preview panel"]
+image::Switching-to-the-preview-panel.png[align="center",title="Switching to the preview panel"]
+{nbsp} +
 
 //ST: !
 The preview panel is dedicated to the preparation of the picture to be exported as a pdf or svg, which are "scalable": in pdf or sv, the resolution of the graph will remain perfect, even with a strong zoom.
@@ -379,17 +412,20 @@ But as you see, it means the network is now looking different than in the Overvi
 //ST: !
 CAUTION: contrary to the Overview panel, here you need to hit the "refresh" button after each parameter change.
 
-image::https://docs.google.com/drawings/d/1gfeX6T1YzVEPFKgrxRmcL47EbeFnnGTmiBRw35V6VCM/pub?w=954&h=525[align="center",title="Updating the parameters"]
+image::Updating-the-parameters.png[align="center",title="Updating the parameters"]
+{nbsp} +
 
 //ST: !
 Here I change just 2 parameters: `Show Labels` and  `Font` (which I reduce to size "5"), to get:
 
-image::https://docs.google.com/drawings/d/1Kz34ITT6BecVkgy7S50JO2nX-hywCWnC_kMpJ21TkXo/pub?w=954&h=525[align="center",title="Result of preview"]
+image::Result-of-preview.png[align="center",title="Result of preview"]
+{nbsp} +
 
 //ST: !
 Export: just click on the button and select the file format you prefer
 
-image::https://docs.google.com/drawings/d/1ATho4fb-YqCAPHw4sLa65le7C0kOtNWk7YOYdjd98RA/pub?w=954&h=525[align="center",title="Export button"]
+image::Export-button.png[align="center",title="Export button"]
+{nbsp} +
 
 //ST: donwload the result file
 

@@ -12,6 +12,7 @@ last modified: {docdate}
 :title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
 
 image::EMLyon_logo_corp.png[align="center"]
+{nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
@@ -21,6 +22,7 @@ image::EMLyon_logo_corp.png[align="center"]
 
 //ST: !
 image::pic-2.jpg[align=center]
+{nbsp} +
 
 //ST: !
 Explanation: your sketch was not loaded to the object yet.
@@ -92,6 +94,7 @@ c. All Macs: in the Arduino IDE, with your sketch open, go to `Tools` and put yo
 
 //ST: !
 image::pic-1.jpg[align=center]
+{nbsp} +
 
 //ST: !
 -> try changing the usb cable. Some cables don't work.
@@ -102,7 +105,7 @@ image::pic-1.jpg[align=center]
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: http://www.clementlevallois.net
