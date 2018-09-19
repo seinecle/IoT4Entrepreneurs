@@ -82,7 +82,7 @@ There are other boards much smaller and cheaper, which can also connect to wifi.
 //ST: !
 They are much harder to use because:
 
-- they have no plug to branch a standard micro usb cable (remember we need some electricity to power the object!)
+- they have no plug for a standard micro usb cable (remember we need some electricity to power the object!)
 - the programming language these boards use are difficult to learn for non specialists.
 - their documentation (all the documents explaining how to use them) is very technical, not very clear.
 

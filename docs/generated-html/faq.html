@@ -528,11 +528,12 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
-<ul class="sectlevel3">
+<ul class="sectlevel1">
 <li><a href="#_1_the_screen_shows_a_lot_of_white_particles">1. The screen shows a lot of white particles</a></li>
-<li><a href="#_2_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory">2. "fatal error: Adafruit_SSD1306.h: No such file or directory"</a></li>
-<li><a href="#_3_cannot_access_com1_espcomm_open_failed">3. "cannot access COM1 / espcomm_open failed"</a></li>
-<li><a href="#_4_upload_complete_but_nothing_on_screen">4. Upload complete but nothing on screen</a></li>
+<li><a href="#_2_dynamicjsonbuffer_not_declared_in_this_scope">2. "DynamicJsonBuffer not declared in this scope"</a></li>
+<li><a href="#_3_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory">3. "fatal error: Adafruit_SSD1306.h: No such file or directory"</a></li>
+<li><a href="#_4_cannot_access_com1_espcomm_open_failed">4. "cannot access COM1 / espcomm_open failed"</a></li>
+<li><a href="#_5_upload_complete_but_nothing_on_screen">5. Upload complete but nothing on screen</a></li>
 <li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
@@ -541,7 +542,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2017-10-30</p>
+<p>last modified: 2018-09-19</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -553,8 +554,9 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_1_the_screen_shows_a_lot_of_white_particles">1. The screen shows a lot of white particles</h4>
+<div class="sect1">
+<h2 id="_1_the_screen_shows_a_lot_of_white_particles">1. The screen shows a lot of white particles</h2>
+<div class="sectionbody">
 <div class="imageblock" style="text-align: center">
 <div class="content">
 <img src="../images/pic-2.jpg" alt="pic 2">
@@ -573,8 +575,40 @@ table.CodeRay td.code>pre{padding:0}
 <p>You know it has loaded successfully when the red line in the Arduino go to "100%"</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_2_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory">2. "fatal error: Adafruit_SSD1306.h: No such file or directory"</h4>
+</div>
+<div class="sect1">
+<h2 id="_2_dynamicjsonbuffer_not_declared_in_this_scope">2. "DynamicJsonBuffer not declared in this scope"</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This error appears when you compile the sketch, you can not download the sketch to the board.</p>
+</div>
+<div class="paragraph">
+<p>Solution: you installed a version of the library ArduinoJson which is <strong>too recent and not stable</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>close your Arduino IDE.</p>
+</li>
+<li>
+<p>Uninstall the ArduinoJson library by <a href="https://stackoverflow.com/a/16754519/798502">following these steps</a>.</p>
+</li>
+<li>
+<p>Install the correct version of the ArduinoJson library, which should be annotated as <strong>stable</strong>.
+As of September 2018, the latest stable version is <strong>5.13.2</strong>.
+To find this version, go to Sketch &#8594; Include Library &#8594; Manage Libraries. Type "ArduinoJson" in the search bar.
+Before installing it, make sure to select version <strong>5.13.2</strong> in the drop down menu!</p>
+</li>
+<li>
+<p>Relaunch the Arduino IDE to make sure the changes take effect.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory">3. "fatal error: Adafruit_SSD1306.h: No such file or directory"</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Solution:</p>
 </div>
@@ -605,8 +639,10 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_3_cannot_access_com1_espcomm_open_failed">3. "cannot access COM1 / espcomm_open failed"</h4>
+</div>
+<div class="sect1">
+<h2 id="_4_cannot_access_com1_espcomm_open_failed">4. "cannot access COM1 / espcomm_open failed"</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Solution:</p>
 </div>
@@ -650,8 +686,10 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 <p>&#8594; In the list of ports, try selecting each port (COM1, COM17&#8230;&#8203; you might have different ones) until the error disappears.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_4_upload_complete_but_nothing_on_screen">4. Upload complete but nothing on screen</h4>
+</div>
+<div class="sect1">
+<h2 id="_5_upload_complete_but_nothing_on_screen">5. Upload complete but nothing on screen</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong>Possible causes:</strong></p>
 </div>
@@ -676,6 +714,7 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 <p>&#8594; try changing the usb cable. Some cables don&#8217;t work.</p>
 </div>
 </div>
+</div>
 <div class="sect1">
 <h2 id="_the_end">The end</h2>
 <div class="sectionbody">
@@ -683,8 +722,10 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/IoT4Entrepreneurs/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]
-This course is made by Clement Levallois.</p>
+<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]</p>
+</div>
+<div class="paragraph">
+<p>This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
 <p>Discover my other courses in data / tech for business: <a href="http://www.clementlevallois.net" class="bare">http://www.clementlevallois.net</a></p>
@@ -715,7 +756,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-10-30 09:00:36 CET
+Last updated 2018-09-19 15:56:48 CEST
 </div>
 </div>
 </body>
