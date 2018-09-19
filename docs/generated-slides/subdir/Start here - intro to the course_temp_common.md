@@ -22,7 +22,7 @@ image::EMLyon_logo_corp.png[align="center"]
 //ST: Instructor and office hours
 //ST: !
 
-The designer and instructor of this course is http://www.clementlevallois.net[Clement Levallois]
+The designer and instructor of this course is https://www.clementlevallois.net[Clement Levallois]
 
 Office hours:
 
@@ -116,6 +116,6 @@ image:round_portrait_mini_150.png[align="center", role="right"]
 
 
 This course is made by Clement Levallois.
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
