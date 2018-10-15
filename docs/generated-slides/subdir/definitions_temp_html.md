@@ -48,8 +48,6 @@ This is a synonymous to connected objects, where "smart" insists that the object
 Starting in the 2000s, we moved from small, fun experiments to the development of an entire industry based on this concept of connecting things to the Internet.
 With decreasing costs for creating connecting objects, and easier protocols to connect (like Wifi, bluetooth and others, which appeared in the late 1990s), connected objects started to become interesting playground for serious innovation.
 
-//+
-What kind of new service could be created with them? What value would they bring?
 
 
 == 2. The anatomy of a connected object
@@ -97,13 +95,14 @@ video::Q5VDEdF3cBc[youtube]
 
 === c. The object can be just a receiver
 In this case, the connected object can display some information that it receives from the network it is connected to.
-
+//+
 This is the kind of objects we are going to build in this course: an object which receives data about air pollution, and shows it on a screen.
 Check the small screen in the middle of it!
 
 image::object.jpg[align="center"]
 {nbsp} +
 
+//+
 [NOTE]
 ====
 Connected objects which receive data can do many things with it, not just showing stuff on screen.
@@ -122,6 +121,7 @@ Connected objects can coordinate to move together and perform a common action (l
 Connected objects do not stand alone and "make a product" or "provide" a service in themselves.
 They must be integrated to a variety of devices and systems which, *altogether*, perform a function.
 
+//+
 It is possible to draw a general schema of the relations of a connected object with the rest of entreprise systems:
 
 image::parts-of-iot-system.png[align="center",title="The integration of an IoT device with the enterprise systems by Slama et al", book="keep"]
@@ -132,6 +132,8 @@ Here, https://www.safaribooksonline.com/library/view/enterprise-iot/978149193425
 
 image::example-airbag.png[align="center",title="The example of an Airbag triggering an emergency call by Slama et al", book="keep"]
 {nbsp} +
+
+What kind of new service could be created with them? What value would they bring?
 
 
 == 3. The value brought by IoT
@@ -175,6 +177,7 @@ Examples of companies providing predictive maintenance services are http://www.r
 ==== Servitization
 "The basic idea of servitization is that manufacturers move from a model based on selling assets toward a model in which they offer a service that utilizes those assets." (Slama et al. 2015)
 
+//+
 ----
 Example: security at home.
 
@@ -182,36 +185,27 @@ Example: security at home.
 - *with* servitization: a company selling a monthly subscription for a "security solution" (from intrusion detection to intervention), enabled by alarm devices.
 ----
 
+//+
 The strategy of servitization existed before connected objects, but IoT expands the ways services can be "attached" to products, thanks to greater connectivity and data flows between these objects and the company's headquarters.
 
 image::servitization-and-iot.jpg[align="center", title="Servitization and IoT by Slama et al", book="keep"]
 {nbsp} +
 
 ==== Data monetization (direct or indirect)
-
 - Direct data monetization consists in selling data - the data is the main asset exchanged for money.
 - Indirect data monetization covers the cases where data enables a transaction, facilitates a partnership,... it is *bartered* without an explicit price. Its role is to catalyze an exchange. An advantage of indirect monetization is that is https://blogs.gartner.com/doug-laney/the-possible-tax-advantages-of-bartering-with-information/[should not be taxable], as noted by Doug Laney from Gartner.
 
-
 === c. IoT - which industry is concerned?
-
 According to a leading consulting on the topic, IoT can be mapped in a series of overlapping domains:
 
 image::iot-panorama.jpg[align="center", title="The panorama of IoT in 2015 by Machina Research", book="keep"]
 {nbsp} +
 
-
 == 3. At stake: the meeting of two corporate cultures
-
 image::machine-versus-www-camps.jpg[align="center",title="The machine vs www camps by Slama et al", book="keep"]
 {nbsp} +
 
-
-
-
 == The end
-//+
-
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
