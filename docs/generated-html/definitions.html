@@ -530,20 +530,23 @@ table.CodeRay td.code>pre{padding:0}
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_1_internet_of_things_connected_objects">1. Internet of Things, connected objects?</a></li>
-<li><a href="#_2_examples">2. Examples</a>
-<ul class="sectlevel2">
-<li><a href="#_a_b2c">a. B2C</a></li>
-<li><a href="#_b_b2b">b. B2B</a></li>
-</ul>
-</li>
-<li><a href="#_4_the_anatomy_of_a_connected_object">4. The anatomy of a connected object</a>
+<li><a href="#_2_the_anatomy_of_a_connected_object">2. The anatomy of a connected object</a>
 <ul class="sectlevel2">
 <li><a href="#_a_the_object_can_receive_and_send_data_like_this_thermostat">a. the object can receive and send data, like this Thermostat:</a></li>
 <li><a href="#_b_the_object_can_be_just_an_emitter">b. The object can be just an emitter</a></li>
 <li><a href="#_c_the_object_can_be_just_a_receiver">c. The object can be just a receiver</a></li>
 <li><a href="#_d_when_the_object_can_connect_to_another_object">d. When the object can connect&#8230;&#8203; to another object</a></li>
+<li><a href="#_e_the_integration_of_an_iot_in_the_systems_of_an_enterprise">e. The integration of an IoT in the systems of an enterprise</a></li>
 </ul>
 </li>
+<li><a href="#_3_the_value_brought_by_iot">3. The value brought by IoT</a>
+<ul class="sectlevel2">
+<li><a href="#_a_b2c_the_customer_perspective">a. B2C: The customer perspective</a></li>
+<li><a href="#_b_b2b_the_manufacturing_or_production_perspective">b. B2B: the manufacturing or production perspective</a></li>
+<li><a href="#_c_iot_which_industry_is_concerned">c. IoT - which industry is concerned?</a></li>
+</ul>
+</li>
+<li><a href="#_3_at_stake_the_meeting_of_two_corporate_cultures">3. At stake: the meeting of two corporate cultures</a></li>
 <li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
@@ -552,7 +555,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-09-19</p>
+<p>last modified: 2018-10-15</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -561,6 +564,19 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This lesson makes use of many diagrams and extracts from the book entitled "Entreprise IoT" by <a href="https://www.safaribooksonline.com/library/view/enterprise-iot/9781491934258/">Dirk Slama et al (2015)</a>, because this book is exceptionally clear and well written.
+I recommend that you read the full book to get a complete picture of the topic.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -613,63 +629,7 @@ With decreasing costs for creating connecting objects, and easier protocols to c
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2_examples">2. Examples</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Connected objects are more and more present in our lives.
-We can put them in 2 categories:</p>
-</div>
-<div class="sect2">
-<h3 id="_a_b2c">a. B2C</h3>
-<div class="paragraph">
-<p><a href="https://explore.garmin.com/en-US/vivo-fitness">a wrist band</a>, or the <a href="https://www.amazon.com/dp/product/B00X4WHP5E/ref=EchoCP_dt_tile_text">Amazon Echo</a>, which is a sound speaker doubling as a Digital Assistant. Or a scale by <a href="https://health.nokia.com/fr/fr/body">Nokia</a>, which tracks your weight but also pulsations.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Connected objects we can dress with are called <strong>wearables</strong> (<a href="https://www.cnet.com/topics/wearable-tech/best-wearable-tech/">smart watches and fitness trackers mostly</a>, but <a href="https://www.wareable.com/smart-clothing/best-smart-clothing">actual clothing as well</a>)</p>
-</li>
-<li>
-<p>Connected objects for the house are often called <strong>smart house devices</strong>, and include <a href="http://www.smarthome.com/wifi-thermostat.html">thermostats</a>, cameras and <a href="https://www.postscapes.com/internet-of-things-award/connected-home-products/">more</a>.</p>
-</li>
-<li>
-<p>Connected objects also tend to be categorized by the kind of service they provide: <a href="https://www.wareable.com/parenting/the-best-wearables-babies-smart-baby-monitors">health</a>, fitness, security, or</p>
-</li>
-</ul>
-</div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="../images/garmin.png" alt="garmin">
-</div>
-<div class="title">Figure 1. source: /</div>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
-<div class="paragraph">
-<p>Companies creating these products are typically selling them to individual consumers (households).
-These are B2C markets : "Business to Consumers", but they also address the B2B market (Business to Business: companies selling to other companies).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_b_b2b">b. B2B</h3>
-<div class="paragraph">
-<p>Connected objects for the industry: all kind of smart sensors and small connected devices are useful to help keep track of all pieces of material and semi-finished products along the production line, in all industries (from agriculture to manufacturing, through health care etc.)</p>
-</div>
-<div class="paragraph">
-<p>The goal is to eliminate waste and increase speed by controlling and monitoring their processes more closely thanks to these devices.</p>
-</div>
-<div class="paragraph">
-<p>Examples of companies providing these services are <a href="http://www.ripplesiot.com/">Ripples</a>, Pentaho, or <a href="https://www.ptc.com/en/internet-of-things">PTC</a>.</p>
-</div>
-<div class="paragraph">
-<p>What makes an object part of the Internet of things?</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_4_the_anatomy_of_a_connected_object">4. The anatomy of a connected object</h2>
+<h2 id="_2_the_anatomy_of_a_connected_object">2. The anatomy of a connected object</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_a_the_object_can_receive_and_send_data_like_this_thermostat">a. the object can receive and send data, like this Thermostat:</h3>
@@ -677,7 +637,7 @@ These are B2C markets : "Business to Consumers", but they also address the B2B m
 <div class="content">
 <a class="image" href="https://nest.com/thermostat/meet-nest-thermostat/"><img src="../images/nest.jpg" alt="nest"></a>
 </div>
-<div class="title">Figure 2. The Nest thermostat</div>
+<div class="title">Figure 1. The Nest thermostat</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
@@ -715,7 +675,7 @@ The list of sensors is immense and this is just a small sample:</p>
 <div class="content">
 <a class="image" href="https://www.sparkfun.com/categories/305?filter_option%5Bprice%5D%5B%5D=is_price_range_0_10&filter_option%5Bprice%5D%5B%5D=is_price_range_10_20&filter_price_floor=&filter_price_ceil="><img src="../images/sensors.jpg" alt="sensors"></a>
 </div>
-<div class="title">Figure 3. Sensors!</div>
+<div class="title">Figure 2. Sensors!</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
@@ -792,6 +752,185 @@ Check the small screen in the middle of it!</p>
 <p>Connected objects can coordinate to move together and perform a common action (like <a href="https://www.youtube.com/watch?v=CJOubyiITsE">moving a child!</a>), or just exchange data.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_e_the_integration_of_an_iot_in_the_systems_of_an_enterprise">e. The integration of an IoT in the systems of an enterprise</h3>
+<div class="paragraph">
+<p>Connected objects do not stand alone and "make a product" or "provide" a service in themselves.
+They must be integrated to a variety of devices and systems which, <strong>altogether</strong>, perform a function.</p>
+</div>
+<div class="paragraph">
+<p>It is possible to draw a general schema of the relations of a connected object with the rest of entreprise systems:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/parts-of-iot-system.png" alt="parts of iot system">
+</div>
+<div class="title">Figure 3. The integration of an IoT device with the enterprise systems by Slama et al</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>This schema can be used to describe any system involving an IoT.
+Here, <a href="https://www.safaribooksonline.com/library/view/enterprise-iot/9781491934258/">Slama et al (2015)</a> pick the example of an Airbag which, if it is triggered, launches a call from an emergency system to the car driver to make sure everything is fine:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/example-airbag.png" alt="example airbag">
+</div>
+<div class="title">Figure 4. The example of an Airbag triggering an emergency call by Slama et al</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_the_value_brought_by_iot">3. The value brought by IoT</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>What do connected objects bring to the table?</p>
+</div>
+<div class="sect2">
+<h3 id="_a_b2c_the_customer_perspective">a. B2C: The customer perspective</h3>
+<div class="paragraph">
+<p><a href="https://explore.garmin.com/en-US/vivo-fitness">a wrist band</a>, or the <a href="https://www.amazon.com/dp/product/B00X4WHP5E/ref=EchoCP_dt_tile_text">Amazon Echo</a>, which is a sound speaker doubling as a Digital Assistant. Or a scale by <a href="https://health.nokia.com/fr/fr/body">Nokia</a>, which tracks your weight but also pulsations.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Connected objects we can dress with are called <strong>wearables</strong> (<a href="https://www.cnet.com/topics/wearable-tech/best-wearable-tech/">smart watches and fitness trackers mostly</a>, but <a href="https://www.wareable.com/smart-clothing/best-smart-clothing">actual clothing as well</a>)</p>
+</li>
+<li>
+<p>Connected objects for the house are often called <strong>smart house devices</strong>, and include <a href="http://www.smarthome.com/wifi-thermostat.html">thermostats</a>, cameras and <a href="https://www.postscapes.com/internet-of-things-award/connected-home-products/">more</a>.</p>
+</li>
+<li>
+<p>Connected objects also tend to be categorized by the kind of service they provide: <a href="https://www.wareable.com/parenting/the-best-wearables-babies-smart-baby-monitors">health</a>, fitness, or security.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/garmin.png" alt="garmin">
+</div>
+<div class="title">Figure 5. A Garmin wristband</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Companies creating these products are typically selling them to individual consumers (households).
+These are B2C markets : "Business to Consumers", but they also address the B2B market (Business to Business: companies selling to other companies).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_b_b2b_the_manufacturing_or_production_perspective">b. B2B: the manufacturing or production perspective</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Most manufacturers today hear very little about their products once they leave the factory.
+In fact, this was traditionally seen as the best possible outcome, the most likely alternative being a costly product recall.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Entreprise IoT<br>
+<cite>Dirk Slama et al.</cite>
+</div>
+</div>
+<div class="paragraph">
+<p>With connected objects, information can flow at each stage of the manufacturing process and post sales as well:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/connected-asset-lifecycle.jpg" alt="connected asset lifecycle">
+</div>
+<div class="title">Figure 6. Connected asset lifecycle management</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Value can be created through different roads:</p>
+</div>
+<div class="sect3">
+<h4 id="_production_efficiencies">Production efficiencies</h4>
+<div class="paragraph">
+<p>IoT facilitates <strong>predictive maintenance</strong>,  <strong>decreases waste</strong> and <strong>increase speed</strong> by controlling and monitoring production processes more closely thanks to connected devices.</p>
+</div>
+<div class="paragraph">
+<p>Examples of companies providing predictive maintenance services are <a href="http://www.ripplesiot.com/">Ripples</a>, Pentaho, or <a href="https://www.ptc.com/en/internet-of-things">PTC</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_servitization">Servitization</h4>
+<div class="paragraph">
+<p>"The basic idea of servitization is that manufacturers move from a model based on selling assets toward a model in which they offer a service that utilizes those assets." (Slama et al. 2015)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Example: security at home.
+
+- *without* servitization: a company selling alarm devices for the house.
+- *with* servitization: a company selling a monthly subscription for a "security solution" (from intrusion detection to intervention), enabled by alarm devices.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The strategy of servitization existed before connected objects, but IoT expands the ways services can be "attached" to products, thanks to greater connectivity and data flows between these objects and the company&#8217;s headquarters.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/servitization-and-iot.jpg" alt="servitization and iot">
+</div>
+<div class="title">Figure 7. Servitization and IoT by Slama et al</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_data_monetization_direct_or_indirect">Data monetization (direct or indirect)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Direct data monetization consists in selling data - the data is the main asset exchanged for money.</p>
+</li>
+<li>
+<p>Indirect data monetization covers the cases where data enables a transaction, facilitates a partnership,&#8230;&#8203; it is <strong>bartered</strong> without an explicit price. Its role is to catalyze an exchange. An advantage of indirect monetization is that is <a href="https://blogs.gartner.com/doug-laney/the-possible-tax-advantages-of-bartering-with-information/">should not be taxable</a>, as noted by Doug Laney from Gartner.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_c_iot_which_industry_is_concerned">c. IoT - which industry is concerned?</h3>
+<div class="paragraph">
+<p>According to a leading consulting on the topic, IoT can be mapped in a series of overlapping domains:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/iot-panorama.jpg" alt="iot panorama">
+</div>
+<div class="title">Figure 8. The panorama of IoT in 2015 by Machina Research</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_at_stake_the_meeting_of_two_corporate_cultures">3. At stake: the meeting of two corporate cultures</h2>
+<div class="sectionbody">
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/machine-versus-www-camps.jpg" alt="machine versus www camps">
+</div>
+<div class="title">Figure 9. The machine vs www camps by Slama et al</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -841,7 +980,7 @@ Check the small screen in the middle of it!</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-09-19 16:52:21 CEST
+Last updated 2018-10-15 19:52:08 CEST
 </div>
 </div>
 </body>

@@ -17,6 +17,9 @@ image::EMLyon_logo_corp.png[align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
+NOTE: This lesson makes use of many diagrams and extracts from the book entitled "Entreprise IoT" by https://www.safaribooksonline.com/library/view/enterprise-iot/9781491934258/[Dirk Slama et al (2015)], because this book is exceptionally clear and well written.
+I recommend that you read the full book to get a complete picture of the topic.
+
 == 1. Internet of Things, connected objects?
 [quote, Wikipedia, entry "Internet of Things" visited on 2017/08/01]
 ________________________________________
@@ -49,39 +52,7 @@ With decreasing costs for creating connecting objects, and easier protocols to c
 What kind of new service could be created with them? What value would they bring?
 
 
-//+
-== 2. Examples
-Connected objects are more and more present in our lives.
-We can put them in 2 categories:
-
-=== a. B2C
-
-https://explore.garmin.com/en-US/vivo-fitness[a wrist band], or the https://www.amazon.com/dp/product/B00X4WHP5E/ref=EchoCP_dt_tile_text[Amazon Echo], which is a sound speaker doubling as a Digital Assistant. Or a scale by https://health.nokia.com/fr/fr/body[Nokia], which tracks your weight but also pulsations.
-
-- Connected objects we can dress with are called *wearables* (https://www.cnet.com/topics/wearable-tech/best-wearable-tech/[smart watches and fitness trackers mostly], but https://www.wareable.com/smart-clothing/best-smart-clothing[actual clothing as well])
-- Connected objects for the house are often called *smart house devices*, and include http://www.smarthome.com/wifi-thermostat.html[thermostats], cameras and https://www.postscapes.com/internet-of-things-award/connected-home-products/[more].
-
-- Connected objects also tend to be categorized by the kind of service they provide: https://www.wareable.com/parenting/the-best-wearables-babies-smart-baby-monitors[health], fitness, security, or
-
-image::garmin.png[align="center", title="source: /"]
-{nbsp} +
-
-//+
-Companies creating these products are typically selling them to individual consumers (households).
-These are B2C markets : "Business to Consumers", but they also address the B2B market (Business to Business: companies selling to other companies).
-
-
-=== b. B2B
-Connected objects for the industry: all kind of smart sensors and small connected devices are useful to help keep track of all pieces of material and semi-finished products along the production line, in all industries (from agriculture to manufacturing, through health care etc.)
-
-The goal is to eliminate waste and increase speed by controlling and monitoring their processes more closely thanks to these devices.
-
-Examples of companies providing these services are http://www.ripplesiot.com/[Ripples], Pentaho, or https://www.ptc.com/en/internet-of-things[PTC].
-
-//+
-What makes an object part of the Internet of things?
-
-== 4. The anatomy of a connected object
+== 2. The anatomy of a connected object
 === a. the object can receive and send data, like this Thermostat:
 .The Nest thermostat
 [link=https://nest.com/thermostat/meet-nest-thermostat/]
@@ -146,6 +117,97 @@ This is called a "swarm": when multiple objects can coordinate their actions by 
 Connected objects can coordinate to move together and perform a common action (like https://www.youtube.com/watch?v=CJOubyiITsE[moving a child!]), or just exchange data.
 
 
+=== e. The integration of an IoT in the systems of an enterprise
+
+Connected objects do not stand alone and "make a product" or "provide" a service in themselves.
+They must be integrated to a variety of devices and systems which, *altogether*, perform a function.
+
+It is possible to draw a general schema of the relations of a connected object with the rest of entreprise systems:
+
+image::parts-of-iot-system.png[align="center",title="The integration of an IoT device with the enterprise systems by Slama et al", book="keep"]
+{nbsp} +
+
+This schema can be used to describe any system involving an IoT.
+Here, https://www.safaribooksonline.com/library/view/enterprise-iot/9781491934258/[Slama et al (2015)] pick the example of an Airbag which, if it is triggered, launches a call from an emergency system to the car driver to make sure everything is fine:
+
+image::example-airbag.png[align="center",title="The example of an Airbag triggering an emergency call by Slama et al", book="keep"]
+{nbsp} +
+
+
+== 3. The value brought by IoT
+What do connected objects bring to the table?
+
+=== a. B2C: The customer perspective
+https://explore.garmin.com/en-US/vivo-fitness[a wrist band], or the https://www.amazon.com/dp/product/B00X4WHP5E/ref=EchoCP_dt_tile_text[Amazon Echo], which is a sound speaker doubling as a Digital Assistant. Or a scale by https://health.nokia.com/fr/fr/body[Nokia], which tracks your weight but also pulsations.
+
+//+
+- Connected objects we can dress with are called *wearables* (https://www.cnet.com/topics/wearable-tech/best-wearable-tech/[smart watches and fitness trackers mostly], but https://www.wareable.com/smart-clothing/best-smart-clothing[actual clothing as well])
+- Connected objects for the house are often called *smart house devices*, and include http://www.smarthome.com/wifi-thermostat.html[thermostats], cameras and https://www.postscapes.com/internet-of-things-award/connected-home-products/[more].
+- Connected objects also tend to be categorized by the kind of service they provide: https://www.wareable.com/parenting/the-best-wearables-babies-smart-baby-monitors[health], fitness, or security.
+
+image::garmin.png[align="center", title="A Garmin wristband"]
+{nbsp} +
+
+//+
+Companies creating these products are typically selling them to individual consumers (households).
+These are B2C markets : "Business to Consumers", but they also address the B2B market (Business to Business: companies selling to other companies).
+
+=== b. B2B: the manufacturing or production perspective
+
+[quote, Entreprise IoT, Dirk Slama et al.]
+________________________________________
+Most manufacturers today hear very little about their products once they leave the factory.
+In fact, this was traditionally seen as the best possible outcome, the most likely alternative being a costly product recall.
+________________________________________
+
+With connected objects, information can flow at each stage of the manufacturing process and post sales as well:
+
+image::connected-asset-lifecycle.jpg[align="center",title="Connected asset lifecycle management", book="keep"]
+{nbsp} +
+
+Value can be created through different roads:
+
+==== Production efficiencies
+IoT facilitates *predictive maintenance*,  *decreases waste* and *increase speed* by controlling and monitoring production processes more closely thanks to connected devices.
+
+Examples of companies providing predictive maintenance services are http://www.ripplesiot.com/[Ripples], Pentaho, or https://www.ptc.com/en/internet-of-things[PTC].
+
+==== Servitization
+"The basic idea of servitization is that manufacturers move from a model based on selling assets toward a model in which they offer a service that utilizes those assets." (Slama et al. 2015)
+
+----
+Example: security at home.
+
+- *without* servitization: a company selling alarm devices for the house.
+- *with* servitization: a company selling a monthly subscription for a "security solution" (from intrusion detection to intervention), enabled by alarm devices.
+----
+
+The strategy of servitization existed before connected objects, but IoT expands the ways services can be "attached" to products, thanks to greater connectivity and data flows between these objects and the company's headquarters.
+
+image::servitization-and-iot.jpg[align="center", title="Servitization and IoT by Slama et al", book="keep"]
+{nbsp} +
+
+==== Data monetization (direct or indirect)
+
+- Direct data monetization consists in selling data - the data is the main asset exchanged for money.
+- Indirect data monetization covers the cases where data enables a transaction, facilitates a partnership,... it is *bartered* without an explicit price. Its role is to catalyze an exchange. An advantage of indirect monetization is that is https://blogs.gartner.com/doug-laney/the-possible-tax-advantages-of-bartering-with-information/[should not be taxable], as noted by Doug Laney from Gartner.
+
+
+=== c. IoT - which industry is concerned?
+
+According to a leading consulting on the topic, IoT can be mapped in a series of overlapping domains:
+
+image::iot-panorama.jpg[align="center", title="The panorama of IoT in 2015 by Machina Research", book="keep"]
+{nbsp} +
+
+
+== 3. At stake: the meeting of two corporate cultures
+
+image::machine-versus-www-camps.jpg[align="center",title="The machine vs www camps by Slama et al", book="keep"]
+{nbsp} +
+
+
+
 
 == The end
 //+
@@ -154,26 +216,6 @@ Find references for this lesson, and other lessons, https://seinecle.github.io/I
 
 image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 
-This course is made by Clement Levallois.
-
-Discover my other courses in data / tech for business: https://www.clementlevallois.net
-
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-cle[@seinecle]
- of connected separately to a central point.
-
-Connected objects can coordinate to move together and perform a common action (like https://www.youtube.com/watch?v=CJOubyiITsE[moving a child!]), or just exchange data.
-
-//ST: !
-
-== The end
-//ST: The end
-
-
-//ST: !
-Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
-
-image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
