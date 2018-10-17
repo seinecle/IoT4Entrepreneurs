@@ -1,4 +1,5 @@
 = Iot for entrepreneurs: Case study of a business model centered on IoT
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-08-04
 

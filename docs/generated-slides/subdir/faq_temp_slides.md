@@ -1,4 +1,5 @@
 = IoT for entrepreneurs: faq
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-10-18
 last modified: {docdate}

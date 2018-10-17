@@ -1,4 +1,5 @@
 = Additional notes on libraries
+== !
 Clément Levallois <levallois@em-lyon.com>
 2018-09-19
 last modified: {docdate}

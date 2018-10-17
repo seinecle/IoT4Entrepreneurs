@@ -1,4 +1,5 @@
 = IoT for entrepreneurs: Session 3
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-12-01
 

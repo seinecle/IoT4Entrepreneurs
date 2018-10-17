@@ -1,4 +1,5 @@
 = IoT for entrepreneurs: Buying components
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-07-31
 
