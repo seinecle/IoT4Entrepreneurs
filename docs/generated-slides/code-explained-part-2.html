@@ -87,7 +87,7 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
 .CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>IoT for entrepreneurs</h1><h2>the code explained (part 2)</h2><div class="preamble"><div class="paragraph"><p>2017-09-04</p></div>
-<div class="paragraph"><p>last modified: 2018-09-19</p></div></div><p class="author"><small>== !</small></p></section>
+<div class="paragraph"><p>last modified: 2018-11-12</p></div></div><p class="author"><small>== !</small></p></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" height="100%" /></div></section>
 <section></section>
 <section id="_the_code_explained_steps_by_steps"><h2>The code, explained steps by steps</h2></section>
@@ -115,9 +115,19 @@ client.println(host);
 client.println(&quot;Connection: close&quot;); <b>(3)</b>
 client.println();
 delay(500);
-return; <b>(4)</b>
+
+unsigned long timeout = millis(); <b>(4)</b>
+while (client.available() == 0) {
+  if (millis() - timeout &gt; 5000) {
+    Serial.println(&quot;&gt;&gt;&gt; Client Timeout !&quot;);
+    client.stop();
+    return ;
+  }
+}
+
+return; <b>(5)</b>
 }</code></pre></div></div>
-<div class="colist arabic"><ol><li><p>all the lines of code starting with <code>client.print</code> contribute to connecting your board to the specific page of the website where the air quality for your location is available.</p></li><li><p>this specific line is the one where your particular location and token will be taken into account: see the <code>webaddress</code> we defined above.</p></li><li><p>the result of the page has been retrieved, the board now disconnects from the website</p></li><li><p>we are done and we can leave the function <code>callAQI</code>. The info retrieved on the website is now stored somewhere in our <code>client</code> variable.</p></li></ol></div>
+<div class="colist arabic"><ol><li><p>all the lines of code starting with <code>client.print</code> contribute to connecting your board to the specific page of the website where the air quality for your location is available.</p></li><li><p>this specific line is the one where your particular location and token will be taken into account: see the <code>webaddress</code> we defined above.</p></li><li><p>this tells the board to disconnect from the website when the connection will be over.</p></li><li><p>this tells the board to wait until the response from the website has been completely received by the client.</p></li><li><p>we are done and we can leave the function <code>callAQI</code>. The info retrieved on the website is now stored in our <code>client</code> variable.</p></li></ol></div>
 <div class="paragraph"><p>To summarize so far:</p></div>
 <div class="olist loweralpha"><ol class="loweralpha" type="a"><li><p>the function (method) <code>callAQI</code> connected the board to the website <code><a href="http://api.waqi.info" class="bare">http://api.waqi.info</a></code></p></li><li><p>on this website, it navigated to a page defined by our token and the location where we want to measure the air quality</p></li><li><p>the result (info about the air quality) has been saved in the memory of our board, in the variable <code>client</code> we used for the connection.</p></li></ol></div>
 <div class="paragraph"><p>We need more steps to extract the info we need from the <code>client</code> variable.
@@ -136,11 +146,13 @@ We could have added extra lines to the function <code>callAQI</code>, but for a 
     String aqiValue = root[&quot;data&quot;][0][&quot;aqi&quot;]; <b>(9)</b>
     return aqiValue; <b>(10)</b>
  }
+ Serial.println(&quot;the client was not available. Returning no data&quot;);
+ return &quot;no data received&quot;;<b>(11)</b>
 }</code></pre></div></div>
-<div class="colist arabic"><ol><li><p>the function is called <code>readAQUIResponse</code>. When it finishes, it provides (it "returns") a value of type <code>String</code></p></li><li><p>this <code>while</code> loop will read the info that the <code>client</code> variable received (see just above)</p></li><li><p>in code, the end of a line is marked by a symbol invisible to humans: it is <code>\n</code>. So the first line is all characters until <code>\n</code>.</p></li><li><p>To debug (help us understand when and why something is wrong), we print this line on the computer</p></li><li><p>we interested only in the line that contains the word "data". If this word is not present, its index will be negative. See more explanations <a href="http://bf-arduinolab.wikidot.com/docs:string-manipulation">here</a>.</p></li><li><p>so if "data" is not contained in the line, just move on to the next: ignore the rest of the function and move back to the beginning of the <code>while</code> loop.</p></li><li><p>Here, we prepare a new variable which will help us extract the info we need from this line.</p></li><li><p>The <code>root</code> variable now contains the line, formatted as a json object (see more on json objects <a href="https://www.impressivewebs.com/what-is-json-introduction-guide-for-beginners/">here</a>).</p></li><li><p>In this <code>root</code> object, we reach for the subelement <code>["data"][0]["aqi"]</code>. This is the value of the air pollution for our location.</p></li><li><p>we return this value, leave the <code>while</code> loop and the function.</p></li></ol></div></section>
+<div class="colist arabic"><ol><li><p>the function is called <code>readAQUIResponse</code>. When it finishes, it provides (it "returns") a value of type <code>String</code></p></li><li><p>this <code>while</code> loop will read the info that the <code>client</code> variable received (see just above)</p></li><li><p>in code, the end of a line is marked by a symbol invisible to humans: it is <code>\n</code>. So the first line is all characters until <code>\n</code>.</p></li><li><p>To debug (help us understand when and why something is wrong), we print this line on the computer</p></li><li><p>we interested only in the line that contains the word "data". If this word is not present, its index will be negative. See more explanations <a href="http://bf-arduinolab.wikidot.com/docs:string-manipulation">here</a>.</p></li><li><p>so if "data" is not contained in the line, just move on to the next: ignore the rest of the function and move back to the beginning of the <code>while</code> loop.</p></li><li><p>Here, we prepare a new variable which will help us extract the info we need from this line.</p></li><li><p>The <code>root</code> variable now contains the line, formatted as a json object (see more on json objects <a href="https://www.impressivewebs.com/what-is-json-introduction-guide-for-beginners/">here</a>).</p></li><li><p>In this <code>root</code> object, we reach for the subelement <code>["data"][0]["aqi"]</code>. This is the value of the air pollution for our location.</p></li><li><p>we return this value, leave the <code>while</code> loop and the function.</p></li><li><p>if the client was not available, we received no data.</p></li></ol></div></section>
 <section id="_the_end"><h2>The end</h2></section>
 <section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/IoT4Entrepreneurs/">here</a>.</p></div>
-<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>[align="center", role="right"]</p></div>
+<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span></p></div>
 <div class="paragraph"><p>This course is made by Clement Levallois.</p></div>
 <div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
 <div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>

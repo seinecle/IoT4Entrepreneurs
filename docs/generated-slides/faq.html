@@ -87,27 +87,30 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
 .CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>IoT for entrepreneurs</h1><h2>faq</h2><div class="preamble"><div class="paragraph"><p>2017-10-18
-last modified: 2018-09-19</p></div></div><p class="author"><small>== !</small></p></section>
+last modified: 2018-11-12</p></div></div><p class="author"><small>== !</small></p></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" height="100%" /></div></section>
 <section></section>
-<section id="_1_the_screen_shows_a_lot_of_white_particles"><h2>1. The screen shows a lot of white particles</h2></section>
+<section id="_1_the_screen_shows_nothing"><h2>1. The screen shows nothing</h2></section>
+<section><div class="paragraph"><p>Make sure you download the latest version of the code, which has been updated on Nov 12, 2018.</p></div>
+<div class="paragraph"><p>Direct link to download the code: <a href="https://github.com/seinecle/IoT4Entrepreneurs/blob/master/src/main/asciidoc/resources/code_for_air_quality_screen.zip" class="bare">https://github.com/seinecle/IoT4Entrepreneurs/blob/master/src/main/asciidoc/resources/code_for_air_quality_screen.zip</a></p></div></section>
+<section id="_2_the_screen_shows_a_lot_of_white_particles"><h2>2. The screen shows a lot of white particles</h2></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/pic-2.jpg" alt="pic 2" height="100%" /></div></section>
 <section><div class="paragraph"><p>Explanation: your sketch was not loaded to the object yet.</p></div>
 <div class="paragraph"><p>Solution: make sur you got the sketch to load to your object.</p></div>
 <div class="paragraph"><p>You know it has loaded successfully when the red line in the Arduino go to "100%"</p></div></section>
-<section id="_2_dynamicjsonbuffer_not_declared_in_this_scope"><h2>2. "DynamicJsonBuffer not declared in this scope"</h2></section>
+<section id="_3_dynamicjsonbuffer_not_declared_in_this_scope"><h2>3. "DynamicJsonBuffer not declared in this scope"</h2></section>
 <section><div class="paragraph"><p>This error appears when you compile the sketch, you can not download the sketch to the board.</p></div>
 <div class="paragraph"><p>Solution: you installed a version of the library ArduinoJson which is <strong>too recent and not stable</strong></p></div>
 <div class="ulist"><ul><li><p>close your Arduino IDE.</p></li><li><p>Uninstall the ArduinoJson library by <a href="https://stackoverflow.com/a/16754519/798502">following these steps</a>.</p></li><li><p>Install the correct version of the ArduinoJson library, which should be annotated as <strong>stable</strong>.
 As of September 2018, the latest stable version is <strong>5.13.2</strong>.
 To find this version, go to Sketch &#8594; Include Library &#8594; Manage Libraries. Type "ArduinoJson" in the search bar.
 Before installing it, make sure to select version <strong>5.13.2</strong> in the drop down menu!</p></li><li><p>Relaunch the Arduino IDE to make sure the changes take effect.</p></li></ul></div></section>
-<section id="_3_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory"><h2>3. "fatal error: Adafruit_SSD1306.h: No such file or directory"</h2></section>
+<section id="_4_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory"><h2>4. "fatal error: Adafruit_SSD1306.h: No such file or directory"</h2></section>
 <section><div class="paragraph"><p>Solution:</p></div>
 <div class="olist arabic"><ol class="arabic" start="1"><li><p>install the library from Sketch &#8594; Include Library &#8594; Manage Libraries: type SSD1306 in the search bar and find it.</p></li></ol></div>
 <div class="admonitionblock important"><table><tr><td class="icon"><div class="title"></div></td><td class="content">In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafruit</strong>, not Acrobotic.</td></tr></table></div>
 <div class="olist arabic"><ol class="arabic" start="2"><li><p>Import this lirary in your sketch via Sketch &#8594; Include Libraries &#8594; find it in the list!!</p></li></ol></div></section>
-<section id="_4_cannot_access_com1_espcomm_open_failed"><h2>4. "cannot access COM1 / espcomm_open failed"</h2></section>
+<section id="_5_cannot_access_com1_espcomm_open_failed"><h2>5. "cannot access COM1 / espcomm_open failed"</h2></section>
 <section><div class="paragraph"><p>Solution:</p></div>
 <div class="paragraph"><p><strong>if you are on a Mac</strong>:</p></div>
 <div class="olist loweralpha"><ol class="loweralpha" start="1" type="a"><li><p>New / recent Mac only: make sure you installed this:</p></li></ol></div>
@@ -126,8 +129,8 @@ Before installing it, make sure to select version <strong>5.13.2</strong> in the
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/pic-1.jpg" alt="pic 1" height="100%" /></div></section>
 <section><div class="paragraph"><p>&#8594; try changing the usb cable. Some cables don&#8217;t work.</p></div></section>
 <section id="_the_end"><h2>The end</h2></section>
-<section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/IoT4Entrepreneurs/">here</a>.</p></div>
-<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>[align="center", role="right"]</p></div>
+<section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://emlyon.github.io/IoT4Entrepreneurs/">here</a>.</p></div>
+<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span></p></div>
 <div class="paragraph"><p>This course is made by Clement Levallois.</p></div>
 <div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
 <div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>

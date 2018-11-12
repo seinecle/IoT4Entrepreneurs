@@ -9,14 +9,19 @@ last modified: {docdate}
 :example-caption!:
 :sourcedir: ../../../main/java
 
-:title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
-
 image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-== 1. The screen shows a lot of white particles
+== 1. The screen shows nothing
+
+Make sure you download the latest version of the code, which has been updated on Nov 12, 2018.
+
+Direct link to download the code: https://github.com/seinecle/IoT4Entrepreneurs/blob/master/src/main/asciidoc/resources/code_for_air_quality_screen.zip
+
+
+== 2. The screen shows a lot of white particles
 image::pic-2.jpg[align=center]
 {nbsp} +
 
@@ -26,7 +31,7 @@ Solution: make sur you got the sketch to load to your object.
 
 You know it has loaded successfully when the red line in the Arduino go to "100%"
 
-== 2. "DynamicJsonBuffer not declared in this scope"
+== 3. "DynamicJsonBuffer not declared in this scope"
 This error appears when you compile the sketch, you can not download the sketch to the board.
 
 Solution: you installed a version of the library ArduinoJson which is *too recent and not stable*
@@ -39,7 +44,7 @@ To find this version, go to Sketch -> Include Library -> Manage Libraries. Type 
 Before installing it, make sure to select version *5.13.2* in the drop down menu!
 - Relaunch the Arduino IDE to make sure the changes take effect.
 
-== 3. "fatal error: Adafruit_SSD1306.h: No such file or directory"
+== 4. "fatal error: Adafruit_SSD1306.h: No such file or directory"
 Solution:
 
 [start=1]
@@ -50,7 +55,7 @@ IMPORTANT: In the list of SSD1306 Libraries, make sure you install the one by *A
 [start=2]
 2. Import this lirary in your sketch via Sketch -> Include Libraries -> find it in the list!!
 
-== 4. "cannot access COM1 / espcomm_open failed"
+== 5. "cannot access COM1 / espcomm_open failed"
 Solution:
 
 *if you are on a Mac*:
@@ -92,13 +97,12 @@ image::pic-1.jpg[align=center]
 
 == The end
 
-Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
+Find references for this lesson, and other lessons, https://emlyon.github.io/IoT4Entrepreneurs/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-

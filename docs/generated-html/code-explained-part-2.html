@@ -538,7 +538,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-09-19</p>
+<p>last modified: 2018-11-12</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -652,7 +652,17 @@ client.println(host);
 client.println(&quot;Connection: close&quot;); <i class="conum" data-value="3"></i><b>(3)</b>
 client.println();
 delay(500);
-return; <i class="conum" data-value="4"></i><b>(4)</b>
+
+unsigned long timeout = millis(); <i class="conum" data-value="4"></i><b>(4)</b>
+while (client.available() == 0) {
+  if (millis() - timeout &gt; 5000) {
+    Serial.println(&quot;&gt;&gt;&gt; Client Timeout !&quot;);
+    client.stop();
+    return ;
+  }
+}
+
+return; <i class="conum" data-value="5"></i><b>(5)</b>
 }</code></pre>
 </div>
 </div>
@@ -668,11 +678,15 @@ return; <i class="conum" data-value="4"></i><b>(4)</b>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>the result of the page has been retrieved, the board now disconnects from the website</td>
+<td>this tells the board to disconnect from the website when the connection will be over.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>we are done and we can leave the function <code>callAQI</code>. The info retrieved on the website is now stored somewhere in our <code>client</code> variable.</td>
+<td>this tells the board to wait until the response from the website has been completely received by the client.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>we are done and we can leave the function <code>callAQI</code>. The info retrieved on the website is now stored in our <code>client</code> variable.</td>
 </tr>
 </table>
 </div>
@@ -714,6 +728,8 @@ We could have added extra lines to the function <code>callAQI</code>, but for a 
     String aqiValue = root[&quot;data&quot;][0][&quot;aqi&quot;]; <i class="conum" data-value="9"></i><b>(9)</b>
     return aqiValue; <i class="conum" data-value="10"></i><b>(10)</b>
  }
+ Serial.println(&quot;the client was not available. Returning no data&quot;);
+ return &quot;no data received&quot;;<i class="conum" data-value="11"></i><b>(11)</b>
 }</code></pre>
 </div>
 </div>
@@ -759,6 +775,10 @@ We could have added extra lines to the function <code>callAQI</code>, but for a 
 <td><i class="conum" data-value="10"></i><b>10</b></td>
 <td>we return this value, leave the <code>while</code> loop and the function.</td>
 </tr>
+<tr>
+<td><i class="conum" data-value="11"></i><b>11</b></td>
+<td>if the client was not available, we received no data.</td>
+</tr>
 </table>
 </div>
 </div>
@@ -770,7 +790,7 @@ We could have added extra lines to the function <code>callAQI</code>, but for a 
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/IoT4Entrepreneurs/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]</p>
+<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
 </div>
 <div class="paragraph">
 <p>This course is made by Clement Levallois.</p>
@@ -804,7 +824,7 @@ We could have added extra lines to the function <code>callAQI</code>, but for a 
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-09-19 16:52:21 CEST
+Last updated 2018-11-12 13:13:51 CET
 </div>
 </div>
 </body>
