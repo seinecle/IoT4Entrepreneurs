@@ -8,9 +8,11 @@
 #include <Adafruit_FeatherOLED.h>
 #include <ArduinoJson.h>
 
-
 // the name and password of my wifi network. Put yours instead!
 // what is "char*"? This means that this variable is made of characters
+
+// put no space or special characters (no French accents!) in the name of your wifi.
+//Choose a simple password with just letters and numbers.
 
 char* ssid     = "arduino";
 char* password = "arduino11";
@@ -33,7 +35,7 @@ void setup() {
   Serial.begin(9600);
 
   while (!Serial) {
-    ;
+    ; 
   }
 
   //initialize the screen. We dont want to have a battery sign visble.
@@ -41,6 +43,8 @@ void setup() {
   screen.setBatteryVisible(false);
 
   //initialize the wifi connection
+//  WiFi.persistent(false);
+//  WiFi.disconnect(true);
   WiFi.begin(ssid, password);
 
   // continue waiting as long as the wifi is not connected (so make sure your wifi is on!)
@@ -54,10 +58,13 @@ void setup() {
 //loop is where all things between { and } will be executed again and again
 
 void loop() {
+  Serial.println("in the loop");
 
   //delete what is on screen the current display
   screen.clearDisplay();
   screen.clearMsgArea();
+
+  Serial.println("screen cleaned");
 
   //get the quality of air at location
   // the following two lines ask "callAQI" and "readAQIResponse" to be executed. These are instructions written in a second file of the project.
@@ -73,11 +80,11 @@ void loop() {
   screen.println("air quality");
   screen.println("at "+ location + ":");
   screen.println(aqi);
-
+  
   // update the screen with these new info:
   screen.display();
 
-  // wait 5 seconds
+  // wait 5 seconds  
   delay(5000);
 
 
