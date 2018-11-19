@@ -9,6 +9,8 @@ last modified: {docdate}
 :revnumber: 1.0
 :example-caption!:
 
+:title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
+
 == !
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
@@ -19,10 +21,16 @@ image::EMLyon_logo_corp.png[align="center"]
 
 == 1. The screen shows nothing
 == !
+[.stretch]
+image::pic-2.jpg[align=center]
+== !
 
-Make sure you download the latest version of the code, which has been updated on Nov 12, 2018.
 
-Direct link to download the code: https://github.com/seinecle/IoT4Entrepreneurs/blob/master/src/main/asciidoc/resources/code_for_air_quality_screen.zip
+Explanation: your sketch was not loaded to the object yet.
+
+Solution: make sur you got the sketch to load to your object.
+
+You know it has loaded successfully when the red line in the Arduino go to "100%"
 
 
 == 2. The screen shows a lot of white particles
@@ -90,7 +98,7 @@ c. All Macs: in the Arduino IDE, with your sketch open, go to `Tools` and put yo
 
 -> In the list of ports, try selecting each port (COM1, COM17... you might have different ones) until the error disappears.
 
-== 5. Upload complete but nothing on screen
+== 6. Upload complete but nothing on screen
 == !
 
 *Possible causes:*
@@ -109,10 +117,22 @@ image::pic-1.jpg[align=center]
 
 -> try changing the usb cable. Some cables don't work.
 
+== 7. "Error de compilation pour carte la Generic ESP8266 Module" / ESP8266WiFi.h: No such file or directory
+== !
+
+You did not select the correct card in the menu. Please go and select "Adafruit Huzzah ESP8266", like this:
+
+== !
+[.stretch]
+image::pic.jpg[align=center]
+== !
+
+
+
 == The end
 == !
 
-Find references for this lesson, and other lessons, https://emlyon.github.io/IoT4Entrepreneurs/[here].
+Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 

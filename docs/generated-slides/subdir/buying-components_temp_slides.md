@@ -63,7 +63,7 @@ Here is a list of resellers which are cheaper options when you are based in Euro
 == !
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 This course is made by Clement Levallois.
 

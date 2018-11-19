@@ -68,13 +68,24 @@ client.println(host);
 client.println("Connection: close"); //<3>
 client.println();
 delay(500);
-return; //<4>
+
+unsigned long timeout = millis(); //<4>
+while (client.available() == 0) {
+  if (millis() - timeout > 5000) {
+    Serial.println(">>> Client Timeout !");
+    client.stop();
+    return ;
+  }
+}
+
+return; //<5>
 }
 ----
 <1> all the lines of code starting with `client.print` contribute to connecting your board to the specific page of the website where the air quality for your location is available.
 <2> this specific line is the one where your particular location and token will be taken into account: see the `webaddress` we defined above.
-<3> the result of the page has been retrieved, the board now disconnects from the website
-<4> we are done and we can leave the function `callAQI`. The info retrieved on the website is now stored somewhere in our `client` variable.
+<3> this tells the board to disconnect from the website when the connection will be over.
+<4> this tells the board to wait until the response from the website has been completely received by the client.
+<5> we are done and we can leave the function `callAQI`. The info retrieved on the website is now stored in our `client` variable.
 
 To summarize so far:
 
@@ -102,6 +113,8 @@ String readAQIResponse(){ //<1>
     String aqiValue = root["data"][0]["aqi"]; //<9>
     return aqiValue; //<10>
  }
+ Serial.println("the client was not available. Returning no data");
+ return "no data received";<11>
 }
 ----
 <1> the function is called `readAQUIResponse`. When it finishes, it provides (it "returns") a value of type `String`
@@ -114,17 +127,16 @@ String readAQIResponse(){ //<1>
 <8> The `root` variable now contains the line, formatted as a json object (see more on json objects https://www.impressivewebs.com/what-is-json-introduction-guide-for-beginners/[here]).
 <9> In this `root` object, we reach for the subelement `["data"][0]["aqi"]`. This is the value of the air pollution for our location.
 <10> we return this value, leave the `while` loop and the function.
-
+<11> if the client was not available, we received no data.
 
 
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-m/seinecle[@seinecle]

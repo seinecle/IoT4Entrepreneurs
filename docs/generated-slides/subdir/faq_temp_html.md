@@ -16,7 +16,7 @@ image::EMLyon_logo_corp.png[align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-== 1. The screen shows a lot of white particles
+== 1. The screen shows nothing
 image::pic-2.jpg[align=center]
 {nbsp} +
 
@@ -26,7 +26,18 @@ Solution: make sur you got the sketch to load to your object.
 
 You know it has loaded successfully when the red line in the Arduino go to "100%"
 
-== 2. "DynamicJsonBuffer not declared in this scope"
+
+== 2. The screen shows a lot of white particles
+image::pic-2.jpg[align=center]
+{nbsp} +
+
+Explanation: your sketch was not loaded to the object yet.
+
+Solution: make sur you got the sketch to load to your object.
+
+You know it has loaded successfully when the red line in the Arduino go to "100%"
+
+== 3. "DynamicJsonBuffer not declared in this scope"
 This error appears when you compile the sketch, you can not download the sketch to the board.
 
 Solution: you installed a version of the library ArduinoJson which is *too recent and not stable*
@@ -39,7 +50,7 @@ To find this version, go to Sketch -> Include Library -> Manage Libraries. Type 
 Before installing it, make sure to select version *5.13.2* in the drop down menu!
 - Relaunch the Arduino IDE to make sure the changes take effect.
 
-== 3. "fatal error: Adafruit_SSD1306.h: No such file or directory"
+== 4. "fatal error: Adafruit_SSD1306.h: No such file or directory"
 Solution:
 
 [start=1]
@@ -50,7 +61,7 @@ IMPORTANT: In the list of SSD1306 Libraries, make sure you install the one by *A
 [start=2]
 2. Import this lirary in your sketch via Sketch -> Include Libraries -> find it in the list!!
 
-== 4. "cannot access COM1 / espcomm_open failed"
+== 5. "cannot access COM1 / espcomm_open failed"
 Solution:
 
 *if you are on a Mac*:
@@ -75,7 +86,7 @@ c. All Macs: in the Arduino IDE, with your sketch open, go to `Tools` and put yo
 
 -> In the list of ports, try selecting each port (COM1, COM17... you might have different ones) until the error disappears.
 
-== 5. Upload complete but nothing on screen
+== 6. Upload complete but nothing on screen
 
 *Possible causes:*
 
@@ -90,11 +101,19 @@ image::pic-1.jpg[align=center]
 
 -> try changing the usb cable. Some cables don't work.
 
+== 7. "Error de compilation pour carte la Generic ESP8266 Module"
+
+You did not select the correct card in the menu. Please go and select "Adafruit Huzzah ESP8266", like this:
+
+image::pic.jpg[align=center]
+{nbsp} +
+
+
 == The end
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 This course is made by Clement Levallois.
 

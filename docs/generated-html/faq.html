@@ -534,7 +534,8 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_3_dynamicjsonbuffer_not_declared_in_this_scope">3. "DynamicJsonBuffer not declared in this scope"</a></li>
 <li><a href="#_4_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory">4. "fatal error: Adafruit_SSD1306.h: No such file or directory"</a></li>
 <li><a href="#_5_cannot_access_com1_espcomm_open_failed">5. "cannot access COM1 / espcomm_open failed"</a></li>
-<li><a href="#_5_upload_complete_but_nothing_on_screen">5. Upload complete but nothing on screen</a></li>
+<li><a href="#_6_upload_complete_but_nothing_on_screen">6. Upload complete but nothing on screen</a></li>
+<li><a href="#_7_error_de_compilation_pour_carte_la_generic_esp8266_module_esp8266wifi_h_no_such_file_or_directory">7. "Error de compilation pour carte la Generic ESP8266 Module" / ESP8266WiFi.h: No such file or directory</a></li>
 <li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
@@ -543,7 +544,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-11-12</p>
+<p>last modified: 2018-11-19</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -558,11 +559,22 @@ table.CodeRay td.code>pre{padding:0}
 <div class="sect1">
 <h2 id="_1_the_screen_shows_nothing">1. The screen shows nothing</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Make sure you download the latest version of the code, which has been updated on Nov 12, 2018.</p>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/pic-2.jpg" alt="pic 2">
+</div>
 </div>
 <div class="paragraph">
-<p>Direct link to download the code: <a href="https://github.com/seinecle/IoT4Entrepreneurs/blob/master/src/main/asciidoc/resources/code_for_air_quality_screen.zip" class="bare">https://github.com/seinecle/IoT4Entrepreneurs/blob/master/src/main/asciidoc/resources/code_for_air_quality_screen.zip</a></p>
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Explanation: your sketch was not loaded to the object yet.</p>
+</div>
+<div class="paragraph">
+<p>Solution: make sur you got the sketch to load to your object.</p>
+</div>
+<div class="paragraph">
+<p>You know it has loaded successfully when the red line in the Arduino go to "100%"</p>
 </div>
 </div>
 </div>
@@ -700,7 +712,7 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 </div>
 </div>
 <div class="sect1">
-<h2 id="_5_upload_complete_but_nothing_on_screen">5. Upload complete but nothing on screen</h2>
+<h2 id="_6_upload_complete_but_nothing_on_screen">6. Upload complete but nothing on screen</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Possible causes:</strong></p>
@@ -728,10 +740,26 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 </div>
 </div>
 <div class="sect1">
+<h2 id="_7_error_de_compilation_pour_carte_la_generic_esp8266_module_esp8266wifi_h_no_such_file_or_directory">7. "Error de compilation pour carte la Generic ESP8266 Module" / ESP8266WiFi.h: No such file or directory</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You did not select the correct card in the menu. Please go and select "Adafruit Huzzah ESP8266", like this:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/pic.jpg" alt="pic">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_the_end">The end</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Find references for this lesson, and other lessons, <a href="https://emlyon.github.io/IoT4Entrepreneurs/">here</a>.</p>
+<p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/IoT4Entrepreneurs/">here</a>.</p>
 </div>
 <div class="paragraph">
 <p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
@@ -768,7 +796,7 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-11-12 13:27:46 CET
+Last updated 2018-11-19 14:08:20 CET
 </div>
 </div>
 </body>
