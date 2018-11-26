@@ -126,12 +126,14 @@ image::pic.jpg[align=center]
 == !
 
 
-== 8. "Please select a Port before uplaod"
+== 8. "Please select a Port before upload"
 == !
 
 You did not select a port in the Arduino menu.
-Solution: your object should be connected to the computer with the cable.
-Select a port in the menu, like this:
+Solution:
+
+a. your object should be connected to the computer with the cable, otherwise the menu "port" will stay greyed out.
+b. select a port in the menu, like this:
 
 == !
 [.stretch]

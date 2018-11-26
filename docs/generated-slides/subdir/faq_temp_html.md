@@ -122,8 +122,11 @@ In particular, on this web page, don't forget to:
 
 1. click on the green button to download the driver:
 
-https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers[image::download_driver_button.png[align=center]]
+[link=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers]
+image::download_driver_button.png[align=center]
+{nbsp} +
 
+[start=2]
 2. allow the driver to work on your Mac. It is explained on the web page, you should do:
 
 image::adafruit_products_allow-silabs-kernel-driver.png[align="center"]
