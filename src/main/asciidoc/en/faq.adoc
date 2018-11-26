@@ -102,7 +102,7 @@ You did not select the correct card in the menu. Please go and select "Adafruit 
 
 image::pic.jpg[align=center]
 
-== 8. "Please select a Port before uplaod"
+== 8. "Please select a Port before upload"
 
 You did not select a port in the Arduino menu.
 Solution: your object should be connected to the computer with the cable.
