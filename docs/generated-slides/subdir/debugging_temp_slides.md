@@ -1,7 +1,7 @@
-= IoT for entrepreneurs: faq
+= Steps to debug
 == !
 Clément Levallois <levallois@em-lyon.com>
-2017-10-18
+2018-10-25
 last modified: {docdate}
 
 :icons!:
@@ -19,12 +19,52 @@ image::EMLyon_logo_corp.png[align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-== 1. The screen shows a lot of white particles
+== Initial state: the screen shows white particle
 == !
 [.stretch]
 image::pic-2.jpg[align=center]
 == !
 
+
+== Steps to debug
+== !
+
+==== 1. Press the reset button and retry download
+== !
+The reset button is situated on the screen. Press it for 5 seconds at least.
+
+== !
+==== 2. Open the blink sketch and download it to the Arduino
+== !
+This sketch can be found in Files -> Examples -> Basics -> blink
+
+If it works, you should see a tiny red led blinking at one second interval on your device. This helps testing the fact that the Arduino is not broken.
+
+== !
+==== 3. Check the soldering of the screen visually
+== !
+Solder material on pins should not touch each other.
+
+== !
+==== 4. Try connecting to a different wifi shared connection
+== !
+The name of the wifi (the "ssid" should not include special characters or space)
+
+== !
+==== 5. Check the soldering of the screen visually
+== !
+Solder material on pins should not touch each other.
+
+== !
+==== 6. Make sure your token for the AQI website works
+== !
+Enter this link on a browser. *Replace the value for the token by the token you got from the website*:
+
+http://api.waqi.info/search/?token=ce3c07596e818c0ef99c070ab4464b7abc2f228d&keyword=Saint-Etienne
+
+(so in the line above, replace `ce3c07596e818c0ef99c070ab4464b7abc2f228d` by your own token)
+
+If you
 
 Explanation: your sketch was not loaded to the object yet.
 

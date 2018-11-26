@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="== !" /><title>IoT for entrepreneurs: faq</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.6.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css" id="theme" /><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="== !" /><title>Steps to debug</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.6.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css" id="theme" /><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
 /*pre.CodeRay {background-color:#f7f7f8;}*/
 .CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
 .CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
@@ -86,13 +86,31 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .insert .insert{color:#080}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
-.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>IoT for entrepreneurs</h1><h2>faq</h2><div class="preamble"><div class="paragraph"><p>2017-10-18
-last modified: 2018-10-25</p></div></div><p class="author"><small>== !</small></p></section>
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Steps to debug</h1><div class="preamble"><div class="paragraph"><p>2018-10-25
+last modified: 2018-11-26</p></div></div><p class="author"><small>== !</small></p></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" height="100%" /></div></section>
 <section></section>
-<section id="_1_the_screen_shows_a_lot_of_white_particles"><h2>1. The screen shows a lot of white particles</h2></section>
+<section id="_initial_state_the_screen_shows_white_particle"><h2>Initial state: the screen shows white particle</h2></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/pic-2.jpg" alt="pic 2" height="100%" /></div></section>
-<section><div class="paragraph"><p>Explanation: your sketch was not loaded to the object yet.</p></div>
+<section></section>
+<section id="_steps_to_debug"><h2>Steps to debug</h2></section>
+<section><h3>1. Press the reset button and retry download</h3></section>
+<section><div class="paragraph"><p>The reset button is situated on the screen. Press it for 5 seconds at least.</p></div></section>
+<section><h3>2. Open the blink sketch and download it to the Arduino</h3></section>
+<section><div class="paragraph"><p>This sketch can be found in Files &#8594; Examples &#8594; Basics &#8594; blink</p></div>
+<div class="paragraph"><p>If it works, you should see a tiny red led blinking at one second interval on your device. This helps testing the fact that the Arduino is not broken.</p></div></section>
+<section><h3>3. Check the soldering of the screen visually</h3></section>
+<section><div class="paragraph"><p>Solder material on pins should not touch each other.</p></div></section>
+<section><h3>4. Try connecting to a different wifi shared connection</h3></section>
+<section><div class="paragraph"><p>The name of the wifi (the "ssid" should not include special characters or space)</p></div></section>
+<section><h3>5. Check the soldering of the screen visually</h3></section>
+<section><div class="paragraph"><p>Solder material on pins should not touch each other.</p></div></section>
+<section><h3>6. Make sure your token for the AQI website works</h3></section>
+<section><div class="paragraph"><p>Enter this link on a browser. <strong>Replace the value for the token by the token you got from the website</strong>:</p></div>
+<div class="paragraph"><p><a href="http://api.waqi.info/search/?token=ce3c07596e818c0ef99c070ab4464b7abc2f228d&amp;keyword=Saint-Etienne" class="bare">http://api.waqi.info/search/?token=ce3c07596e818c0ef99c070ab4464b7abc2f228d&amp;keyword=Saint-Etienne</a></p></div>
+<div class="paragraph"><p>(so in the line above, replace <code>ce3c07596e818c0ef99c070ab4464b7abc2f228d</code> by your own token)</p></div>
+<div class="paragraph"><p>If you</p></div>
+<div class="paragraph"><p>Explanation: your sketch was not loaded to the object yet.</p></div>
 <div class="paragraph"><p>Solution: make sur you got the sketch to load to your object.</p></div>
 <div class="paragraph"><p>You know it has loaded successfully when the red line in the Arduino go to "100%"</p></div></section>
 <section id="_2_dynamicjsonbuffer_not_declared_in_this_scope"><h2>2. "DynamicJsonBuffer not declared in this scope"</h2></section>

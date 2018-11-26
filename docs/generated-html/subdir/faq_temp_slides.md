@@ -9,8 +9,6 @@ last modified: {docdate}
 :revnumber: 1.0
 :example-caption!:
 
-:title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
-
 == !
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
@@ -127,6 +125,44 @@ You did not select the correct card in the menu. Please go and select "Adafruit 
 image::pic.jpg[align=center]
 == !
 
+
+== 8. "Please select a Port before uplaod"
+== !
+
+You did not select a port in the Arduino menu.
+Solution: your object should be connected to the computer with the cable.
+Select a port in the menu, like this:
+
+== !
+[.stretch]
+image::selecting_a_port.jpg[align=center]
+== !
+
+
+If you are on a Mac and you don't see *"dev/SLAB_USBtoUART"* among the available ports, it means you did not install a driver.
+Please install the driver following carefully the instructions https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide[on this page].
+
+In particular, on this web page, don't forget to:
+
+1. click on the green button to download the driver:
+
+[link=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers]
+== !
+[.stretch]
+image::download_driver_button.png[align=center]
+== !
+
+
+[start=2]
+2. allow the driver to work on your Mac. It is explained on the web page, you should do:
+
+== !
+[.stretch]
+image::adafruit_products_allow-silabs-kernel-driver.png[align="center"]
+== !
+
+
+After all these steps you should be able to see *"dev/SLAB_USBtoUART"* in the list of available ports in the Arduino software. Select it.
 
 
 == The end

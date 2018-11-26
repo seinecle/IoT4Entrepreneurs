@@ -9,8 +9,6 @@ last modified: {docdate}
 :example-caption!:
 :sourcedir: ../../../main/java
 
-:title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
-
 image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
 
@@ -101,12 +99,37 @@ image::pic-1.jpg[align=center]
 
 -> try changing the usb cable. Some cables don't work.
 
-== 7. "Error de compilation pour carte la Generic ESP8266 Module"
+== 7. "Error de compilation pour carte la Generic ESP8266 Module" / ESP8266WiFi.h: No such file or directory
 
 You did not select the correct card in the menu. Please go and select "Adafruit Huzzah ESP8266", like this:
 
 image::pic.jpg[align=center]
 {nbsp} +
+
+== 8. "Please select a Port before uplaod"
+
+You did not select a port in the Arduino menu.
+Solution: your object should be connected to the computer with the cable.
+Select a port in the menu, like this:
+
+image::selecting_a_port.jpg[align=center]
+{nbsp} +
+
+If you are on a Mac and you don't see *"dev/SLAB_USBtoUART"* among the available ports, it means you did not install a driver.
+Please install the driver following carefully the instructions https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide[on this page].
+
+In particular, on this web page, don't forget to:
+
+1. click on the green button to download the driver:
+
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers[image::download_driver_button.png[align=center]]
+
+2. allow the driver to work on your Mac. It is explained on the web page, you should do:
+
+image::adafruit_products_allow-silabs-kernel-driver.png[align="center"]
+{nbsp} +
+
+After all these steps you should be able to see *"dev/SLAB_USBtoUART"* in the list of available ports in the Arduino software. Select it.
 
 
 == The end

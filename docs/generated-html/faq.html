@@ -536,6 +536,7 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_5_cannot_access_com1_espcomm_open_failed">5. "cannot access COM1 / espcomm_open failed"</a></li>
 <li><a href="#_6_upload_complete_but_nothing_on_screen">6. Upload complete but nothing on screen</a></li>
 <li><a href="#_7_error_de_compilation_pour_carte_la_generic_esp8266_module_esp8266wifi_h_no_such_file_or_directory">7. "Error de compilation pour carte la Generic ESP8266 Module" / ESP8266WiFi.h: No such file or directory</a></li>
+<li><a href="#_8_please_select_a_port_before_uplaod">8. "Please select a Port before uplaod"</a></li>
 <li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
@@ -544,7 +545,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-11-19</p>
+<p>last modified: 2018-11-26</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -756,6 +757,64 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 </div>
 </div>
 <div class="sect1">
+<h2 id="_8_please_select_a_port_before_uplaod">8. "Please select a Port before uplaod"</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You did not select a port in the Arduino menu.
+Solution: your object should be connected to the computer with the cable.
+Select a port in the menu, like this:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/selecting_a_port.jpg" alt="selecting a port">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>If you are on a Mac and you don&#8217;t see <strong>"dev/SLAB_USBtoUART"</strong> among the available ports, it means you did not install a driver.
+Please install the driver following carefully the instructions <a href="https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide">on this page</a>.</p>
+</div>
+<div class="paragraph">
+<p>In particular, on this web page, don&#8217;t forget to:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>click on the green button to download the driver:</p>
+</li>
+</ol>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<a class="image" href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers"><img src="../images/download_driver_button.png" alt="download driver button"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>allow the driver to work on your Mac. It is explained on the web page, you should do:</p>
+</li>
+</ol>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/adafruit_products_allow-silabs-kernel-driver.png" alt="adafruit products allow silabs kernel driver">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>After all these steps you should be able to see <strong>"dev/SLAB_USBtoUART"</strong> in the list of available ports in the Arduino software. Select it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_the_end">The end</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -796,7 +855,7 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-11-19 14:08:20 CET
+Last updated 2018-11-26 09:56:40 CET
 </div>
 </div>
 </body>
