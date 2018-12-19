@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
 <meta name="author" content="Clément Levallois">
-<title>IoT for entrepreneurs: faq</title>
+<title>Steps to debug</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -520,16 +520,26 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article">
 <div id="header">
-<h1>IoT for entrepreneurs: faq</h1>
+<h1>Steps to debug</h1>
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2017-10-18</span>
+<span id="revdate">2018-10-25</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_1_the_screen_shows_a_lot_of_white_particles">1. The screen shows a lot of white particles</a></li>
+<li><a href="#_initial_state_the_screen_shows_white_particle">Initial state: the screen shows white particle</a></li>
+<li><a href="#_steps_to_debug">Steps to debug</a>
+<ul class="sectlevel2">
+<li><a href="#_1_press_the_reset_button_and_retry_download">1. Press the reset button and retry download</a></li>
+<li><a href="#_2_open_the_blink_sketch_and_download_it_to_the_arduino">2. Open the blink sketch and download it to the Arduino</a></li>
+<li><a href="#_3_check_the_soldering_of_the_screen_visually">3. Check the soldering of the screen visually</a></li>
+<li><a href="#_4_try_connecting_to_a_different_wifi_shared_connection">4. Try connecting to a different wifi shared connection</a></li>
+<li><a href="#_5_check_the_soldering_of_the_screen_visually">5. Check the soldering of the screen visually</a></li>
+<li><a href="#_6_make_sure_your_token_for_the_aqi_website_works">6. Make sure your token for the AQI website works</a></li>
+</ul>
+</li>
 <li><a href="#_2_dynamicjsonbuffer_not_declared_in_this_scope">2. "DynamicJsonBuffer not declared in this scope"</a></li>
 <li><a href="#_3_fatal_error_adafruit_ssd1306_h_no_such_file_or_directory">3. "fatal error: Adafruit_SSD1306.h: No such file or directory"</a></li>
 <li><a href="#_4_cannot_access_com1_espcomm_open_failed">4. "cannot access COM1 / espcomm_open failed"</a></li>
@@ -542,7 +552,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-10-25</p>
+<p>last modified: 2018-11-26</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -555,7 +565,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect1">
-<h2 id="_1_the_screen_shows_a_lot_of_white_particles">1. The screen shows a lot of white particles</h2>
+<h2 id="_initial_state_the_screen_shows_white_particle">Initial state: the screen shows white particle</h2>
 <div class="sectionbody">
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -565,6 +575,58 @@ table.CodeRay td.code>pre{padding:0}
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_steps_to_debug">Steps to debug</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_1_press_the_reset_button_and_retry_download">1. Press the reset button and retry download</h3>
+<div class="paragraph">
+<p>The reset button is situated on the screen. Press it for 5 seconds at least.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_open_the_blink_sketch_and_download_it_to_the_arduino">2. Open the blink sketch and download it to the Arduino</h3>
+<div class="paragraph">
+<p>This sketch can be found in Files &#8594; Examples &#8594; Basics &#8594; blink</p>
+</div>
+<div class="paragraph">
+<p>If it works, you should see a tiny red led blinking at one second interval on your device. This helps testing the fact that the Arduino is not broken.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_check_the_soldering_of_the_screen_visually">3. Check the soldering of the screen visually</h3>
+<div class="paragraph">
+<p>Solder material on pins should not touch each other.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_try_connecting_to_a_different_wifi_shared_connection">4. Try connecting to a different wifi shared connection</h3>
+<div class="paragraph">
+<p>The name of the wifi (the "ssid" should not include special characters or space)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_check_the_soldering_of_the_screen_visually">5. Check the soldering of the screen visually</h3>
+<div class="paragraph">
+<p>Solder material on pins should not touch each other.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_6_make_sure_your_token_for_the_aqi_website_works">6. Make sure your token for the AQI website works</h3>
+<div class="paragraph">
+<p>Enter this link on a browser. <strong>Replace the value for the token by the token you got from the website</strong>:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://api.waqi.info/search/?token=ce3c07596e818c0ef99c070ab4464b7abc2f228d&amp;keyword=Saint-Etienne" class="bare">http://api.waqi.info/search/?token=ce3c07596e818c0ef99c070ab4464b7abc2f228d&amp;keyword=Saint-Etienne</a></p>
+</div>
+<div class="paragraph">
+<p>(so in the line above, replace <code>ce3c07596e818c0ef99c070ab4464b7abc2f228d</code> by your own token)</p>
+</div>
+<div class="paragraph">
+<p>If you</p>
+</div>
 <div class="paragraph">
 <p>Explanation: your sketch was not loaded to the object yet.</p>
 </div>
@@ -573,6 +635,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div class="paragraph">
 <p>You know it has loaded successfully when the red line in the Arduino go to "100%"</p>
+</div>
 </div>
 </div>
 </div>
@@ -756,7 +819,7 @@ In the list of SSD1306 Libraries, make sure you install the one by <strong>Adafr
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-10-25 11:42:54 CEST
+Last updated 2018-11-26 09:52:34 CET
 </div>
 </div>
 </body>

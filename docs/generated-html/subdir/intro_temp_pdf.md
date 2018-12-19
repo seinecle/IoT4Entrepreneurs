@@ -10,8 +10,6 @@ last modified: {docdate}
 :example-caption!:
 :sourcedir: ../../../main/java
 
-:title-logo-image: gephi-logo-2010-transparent.png[width="450" align="center"]
-
 image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
 
@@ -79,7 +77,6 @@ We will also need a soldering equipment:
 image::soldering-station.jpg[align="center",title="Soldering station",pdfwidth="50%", book="keep"]
 {nbsp} +
 
-//+
 *emlyon business school students*: you can visit the Makers Labs on our campuses for soldering (have you visited http://makerslab.em-lyon.com/[their website]?).
 
 Ask the MakersLab manager to use the soldering stations under their supervision.
@@ -105,8 +102,9 @@ video::C6vhPETtXN8[youtube]
 {nbsp} +
 
 3 in-class sessions:
+
 - 1st (today): Introduction
-- 2nd (check the date on the syllabus): IoT and their business models
+- 2nd (check the date on the syllabus): IoT and their impact on business
 - 3rd (check the date on the syllabus): business game: how to create economic value with IoT? Using the DATOM method.
 
 == 6. Evaluation of the course
@@ -119,19 +117,29 @@ You explain in this video the key difficulty you faced.
 
 Example of a good video:
 
-//+
 video::155B6dSZEfs[youtube]
 {nbsp} +
 
-//+
 Note: to get a 10/10, you need to add a bonus feature to the object.
 
 Examples: extra coding, adding a 3D-printed case...
 
 //+
 - INDIVIDUAL assignment. 50% of the grade:
--> a video where you discuss a connected object on the market (no need to buy it!). You explain 1) the function it performs, 2) the business model behind it, and 3) secuirty issues raised by the object.
 
+-> a video where you discuss a connected object on the market (no need to buy it!).
+
+You must explain:
+
+//+
+1. the function it performs
+2. the business model behind it
+3. security issues raised by the object.
+
+//+
+IMPORTANT: you must choose an object with a business model that is more interesting than just "it is sold at this price".
+
+//+
 Example of a good video:
 
 video::5TIKaf6hKMg[youtube]
@@ -143,8 +151,6 @@ Grading is as follows:
 image::grading-scale.jpg["Grading scale"]
 {nbsp} +
 
-
-//+
 Each video should last about 3 minutes and *less than 5 minutes in any case*.
 
 
@@ -185,4 +191,3 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-itter.com/seinecle[@seinecle]
