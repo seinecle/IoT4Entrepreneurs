@@ -30,15 +30,12 @@ Can you guess who opened the annual automotive show in Frankfurt in 2017?
 == !
 Sheryl Sandberg, COO at Facebook:
 
-
 == !
 [.stretch]
 video::llgCU1lsTI0[youtube]
 == !
 
 
-
-== !
 At the heart of this change, there is the fact that objects get *traversed by data*.
 
 It's not just mechanics powered by electricity anymore.
@@ -116,6 +113,9 @@ Finally, you will need a micro usb cable to plug your object to your computer. Y
 ** Documents and videos are available on this website: https://emlyon.github.io/IoT4Entrepreneurs/
 ** The Makers' Lab is available to help you for soldering, 3D printing, debugging.
 ** Arduino software is installed on the computers of the Makers' Lab
+
+
+== !
 * 3 in-class sessions:
 ** 1st (today): Introduction and distribution of the parts to build the object
 ** 2nd (check the date on the syllabus): IoT and their impact on business
@@ -125,12 +125,10 @@ Finally, you will need a micro usb cable to plug your object to your computer. Y
 == !
 Example of a video on the website:
 
-
 == !
 [.stretch]
 video::C6vhPETtXN8[youtube]
 == !
-
 
 
 == 6.Your evaluation in this course
@@ -183,8 +181,6 @@ video::5TIKaf6hKMg[youtube]
 == !
 
 
-
-== !
 Grading is as follows:
 
 == !
@@ -224,6 +220,13 @@ image::oreilly-iot.jpg[align="center", title="Entreprise IoT"]
 This book is available http://shop.oreilly.com/product/0636920039433.do[online here].
 
 You have access to this book freely through the http://proquestcombo.safaribooksonline.com.ezp.em-lyon.com/book/software-engineering-and-development/project-management/9781491934258[online library here].
+
+== Time to get the parts and create teams
+== !
+
+- Create teams of two
+- Put your names on the list and sign.
+
 
 == The end
 == !

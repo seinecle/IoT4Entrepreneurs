@@ -33,8 +33,24 @@ It's not just mechanics powered by electricity anymore.
 
 It's mechanics, with computers, software (code), Internet connection and data flowing.
 
+=== Let's practice!
+
+Can you tell how one of the following industries / sectors has been impacted by software or IoT?
+
+Spend *5 minutes* on it and tell us:
+
 //+
-And this is what Internet of Things and smart objects are pretty much about.
+1. Did it improve the experience of the customer?
+2. Did it improve the efficiency of the production? (savings on costs? Less wastes? etc...)
+3. Did it create new business models?
+
+//+
+- gardening
+- tourism
+- education
+- logistics
+- going to the restaurant
+
 
 //+
 This course is designed to make you *touch* this, feel confident about getting a job in this new economy.
@@ -185,8 +201,5 @@ image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
-
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-w.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
