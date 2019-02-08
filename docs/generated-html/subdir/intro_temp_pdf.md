@@ -19,16 +19,14 @@ image::EMLyon_logo_corp.png[align="center"]
 WARNING: *for emlyon students*: this document does not substitute for the syllabus posted on Brightspace. Please go and read the syllabus.
 
 == 1. START
-Can you guess who opened the annual automotive show in Frankfurt this year?
+Can you guess who opened the annual automotive show in Frankfurt in 2017?
 
 //+
 Sheryl Sandberg, COO at Facebook:
 
-//+
 video::llgCU1lsTI0[youtube]
 {nbsp} +
 
-//+
 At the heart of this change, there is the fact that objects get *traversed by data*.
 
 It's not just mechanics powered by electricity anymore.
@@ -52,15 +50,12 @@ If you don't know how to code, then copy pasting is ok in this course.
 
 
 == 3. Learning objectives
-When finishing this course, you will have learnt to:
+When finishing this course, you will have acquired 3 competencies:
 
 //+
-- create a connected object with a board and a screen, with soldering, able to connect to WiFi.
-- write a program to connect to the Internet via WiFi and retrieve an air pollution measure in the location you choose.
-
-//+
-- transfer the code to the object: get the object to work.
-- understand the business stakes of connected objects, beyond this small object: B2B, B2C, design and security aspects.
+1. Learn about IoT in practice: what does it look like? how does it work? ([red]*yourself, in autonomy*)
+2. Learn about the importance of IoT for business: why is it a big deal today for management? ([red]*class n°2*)
+3. Learn DDBM: a new method to create business value from IoT ([red]*class n°3*)
 
 == 4. Material and budget
 We will use components to build the object.
@@ -90,24 +85,24 @@ Or better, you can find a Makers Lab near you and ask for their help! http://the
 Finally, you will need a micro usb cable to plug your object to your computer. You probably have one already if you have an Android smartphone. Shapes and formats for micro USB keep changing. Here we need the classic format (so, not reversible) https://www.amazon.com/Rampow-Cable-Braided-Samsung-Charging/dp/B01GJC4YMC/ref=sr_1_1?s=electronics&ie=UTF8&qid=1501582580&sr=1-1-spons&keywords=micro+usb+cable&psc=1[like this one].
 
 == 5. Organization: this is a blended course
-- Lessons are a mix of documents and videos.
-- Documents and videos are available on this website: https://emlyon.github.io/IoT4Entrepreneurs/
-- So this is "distance learning": build your object by following the videos, read the documents!
+* The construction of the object is done by yourself, at home
+** Documents and videos are available on this website: https://emlyon.github.io/IoT4Entrepreneurs/
+** The Makers' Lab is available to help you for soldering, 3D printing, debugging.
+** Arduino software is installed on the computers of the Makers' Lab
+
+//+
+* 3 in-class sessions:
+** 1st (today): Introduction and distribution of the parts to build the object
+** 2nd (check the date on the syllabus): IoT and their impact on business
+** 3rd (check the date on the syllabus): business game: how to create economic value with IoT? Using the DDBM method.
 
 //+
 Example of a video on the website:
 
-//+
 video::C6vhPETtXN8[youtube]
 {nbsp} +
 
-3 in-class sessions:
-
-- 1st (today): Introduction
-- 2nd (check the date on the syllabus): IoT and their impact on business
-- 3rd (check the date on the syllabus): business game: how to create economic value with IoT? Using the DATOM method.
-
-== 6. Evaluation of the course
+== 6.Your evaluation in this course
 The evaluation is in two steps:
 
 //+
@@ -145,7 +140,6 @@ Example of a good video:
 video::5TIKaf6hKMg[youtube]
 {nbsp} +
 
-//+
 Grading is as follows:
 
 image::grading-scale.jpg["Grading scale"]
@@ -158,10 +152,6 @@ Each video should last about 3 minutes and *less than 5 minutes in any case*.
 Post the video on *Youtube* only, do not add a password to the video.
 
 Make the video "unlisted" if you prefer.
-
-//+
-- *emlyon students only*: write the link to the Youtube video on the Dropbox of brightspace.
-- *other participants*: you can send me the links to the videos at levallois@em-lyon.com and I'll be happy to evaluate them.
 
 *Don't send me video files as I will not open them!*
 
@@ -179,7 +169,13 @@ image::oreilly-iot.jpg[align="center", title="Entreprise IoT"]
 
 This book is available http://shop.oreilly.com/product/0636920039433.do[online here].
 
-emlyon students have access to this book freely through the http://proquestcombo.safaribooksonline.com.ezp.em-lyon.com/book/software-engineering-and-development/project-management/9781491934258[online library here].
+You have access to this book freely through the http://proquestcombo.safaribooksonline.com.ezp.em-lyon.com/book/software-engineering-and-development/project-management/9781491934258[online library here].
+
+== Time to get the parts and create teams
+
+- Create teams of two
+- Put your names on the list and sign.
+
 
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/IoT4Entrepreneurs/[here].
@@ -189,5 +185,8 @@ image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+w.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

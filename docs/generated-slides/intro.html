@@ -87,16 +87,15 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
 .CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>IoT for entrepreneurs</h1><h2>Introduction to the course</h2><div class="preamble"><div class="paragraph"><p>2017-07-31</p></div>
-<div class="paragraph"><p>last modified: 2018-12-19</p></div></div><p class="author"><small>== !</small></p></section>
+<div class="paragraph"><p>last modified: 2019-02-08</p></div></div><p class="author"><small>== !</small></p></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" height="100%" /></div></section>
 <section></section>
 <section id="_note"><h2>NOTE</h2></section>
 <section><div class="admonitionblock warning"><table><tr><td class="icon"><div class="title"></div></td><td class="content"><strong>for emlyon students</strong>: this document does not substitute for the syllabus posted on Brightspace. Please go and read the syllabus.</td></tr></table></div></section>
 <section id="_1_start"><h2>1. START</h2></section>
-<section><div class="paragraph"><p>Can you guess who opened the annual automotive show in Frankfurt this year?</p></div></section>
+<section><div class="paragraph"><p>Can you guess who opened the annual automotive show in Frankfurt in 2017?</p></div></section>
 <section><div class="paragraph"><p>Sheryl Sandberg, COO at Facebook:</p></div></section>
 <section><div class="videoblock stretch stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/llgCU1lsTI0?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
-<section></section>
 <section><div class="paragraph"><p>At the heart of this change, there is the fact that objects get <strong>traversed by data</strong>.</p></div>
 <div class="paragraph"><p>It&#8217;s not just mechanics powered by electricity anymore.</p></div>
 <div class="paragraph"><p>It&#8217;s mechanics, with computers, software (code), Internet connection and data flowing.</p></div></section>
@@ -108,9 +107,8 @@ No pre-requisite is needed.</p></div></section>
 <section><div class="paragraph"><p>A knowledge of coding (in any programming language) would help you understand the part where we will code the object.
 If you don&#8217;t know how to code, then copy pasting is ok in this course.</p></div></section>
 <section id="_3_learning_objectives"><h2>3. Learning objectives</h2></section>
-<section><div class="paragraph"><p>When finishing this course, you will have learnt to:</p></div></section>
-<section><div class="ulist"><ul><li><p>create a connected object with a board and a screen, with soldering, able to connect to WiFi.</p></li><li><p>write a program to connect to the Internet via WiFi and retrieve an air pollution measure in the location you choose.</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>transfer the code to the object: get the object to work.</p></li><li><p>understand the business stakes of connected objects, beyond this small object: B2B, B2C, design and security aspects.</p></li></ul></div></section>
+<section><div class="paragraph"><p>When finishing this course, you will have acquired 3 competencies:</p></div></section>
+<section><div class="olist arabic"><ol class="arabic"><li><p>Learn about IoT in practice: what does it look like? how does it work? (<strong class="red">yourself, in autonomy</strong>)</p></li><li><p>Learn about the importance of IoT for business: why is it a big deal today for management? (<strong class="red">class n°2</strong>)</p></li><li><p>Learn DDBM: a new method to create business value from IoT (<strong class="red">class n°3</strong>)</p></li></ol></div></section>
 <section id="_4_material_and_budget"><h2>4. Material and budget</h2></section>
 <section><div class="paragraph"><p>We will use components to build the object.</p></div>
 <div class="paragraph"><p><strong>emlyon students: these components are provided to you directly so you can skip this section.</strong></p></div></section>
@@ -124,12 +122,12 @@ For further details, check the lesson "Where to buy components".</p></div></sect
 <div class="paragraph"><p>Or better, you can find a Makers Lab near you and ask for their help! <a href="http://themakermap.com/">Check here for a list of Makerslab worldwide</a>.</p></div></section>
 <section><div class="paragraph"><p>Finally, you will need a micro usb cable to plug your object to your computer. You probably have one already if you have an Android smartphone. Shapes and formats for micro USB keep changing. Here we need the classic format (so, not reversible) <a href="https://www.amazon.com/Rampow-Cable-Braided-Samsung-Charging/dp/B01GJC4YMC/ref=sr_1_1?s=electronics&amp;ie=UTF8&amp;qid=1501582580&amp;sr=1-1-spons&amp;keywords=micro+usb+cable&amp;psc=1">like this one</a>.</p></div></section>
 <section id="_5_organization_this_is_a_blended_course"><h2>5. Organization: this is a blended course</h2></section>
-<section><div class="ulist"><ul><li><p>Lessons are a mix of documents and videos.</p></li><li><p>Documents and videos are available on this website: <a href="https://emlyon.github.io/IoT4Entrepreneurs/" class="bare">https://emlyon.github.io/IoT4Entrepreneurs/</a></p></li><li><p>So this is "distance learning": build your object by following the videos, read the documents!</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>The construction of the object is done by yourself, at home</p><div class="ulist"><ul><li><p>Documents and videos are available on this website: <a href="https://emlyon.github.io/IoT4Entrepreneurs/" class="bare">https://emlyon.github.io/IoT4Entrepreneurs/</a></p></li><li><p>The Makers' Lab is available to help you for soldering, 3D printing, debugging.</p></li><li><p>Arduino software is installed on the computers of the Makers' Lab</p></li></ul></div></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>3 in-class sessions:</p><div class="ulist"><ul><li><p>1st (today): Introduction and distribution of the parts to build the object</p></li><li><p>2nd (check the date on the syllabus): IoT and their impact on business</p></li><li><p>3rd (check the date on the syllabus): business game: how to create economic value with IoT? Using the DDBM method.</p></li></ul></div></li></ul></div></section>
 <section><div class="paragraph"><p>Example of a video on the website:</p></div></section>
 <section><div class="videoblock stretch stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/C6vhPETtXN8?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
-<section><div class="paragraph"><p>3 in-class sessions:</p></div>
-<div class="ulist"><ul><li><p>1st (today): Introduction</p></li><li><p>2nd (check the date on the syllabus): IoT and their impact on business</p></li><li><p>3rd (check the date on the syllabus): business game: how to create economic value with IoT? Using the DATOM method.</p></li></ul></div></section>
-<section id="_6_evaluation_of_the_course"><h2>6. Evaluation of the course</h2></section>
+<section></section>
+<section id="_6_your_evaluation_in_this_course"><h2>6.Your evaluation in this course</h2></section>
 <section><div class="paragraph"><p>The evaluation is in two steps:</p></div></section>
 <section><div class="ulist"><ul><li><p>GROUP assigment (2 students per group). 50% of the final grade:
 &#8594; a video where you show your object, which should be working.
@@ -145,13 +143,11 @@ You explain in this video the key difficulty you faced.</p></li></ul></div>
 <section><div class="admonitionblock important"><table><tr><td class="icon"><div class="title"></div></td><td class="content">you must choose an object with a business model that is more interesting than just "it is sold at this price".</td></tr></table></div></section>
 <section><div class="paragraph"><p>Example of a good video:</p></div></section>
 <section><div class="videoblock stretch stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/5TIKaf6hKMg?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
-<section></section>
 <section><div class="paragraph"><p>Grading is as follows:</p></div></section>
 <section><div class="imageblock stretch" style=""><img src="../images/grading-scale.jpg" alt="Grading scale" height="100%" /></div></section>
 <section><div class="paragraph"><p>Each video should last about 3 minutes and <strong>less than 5 minutes in any case</strong>.</p></div></section>
 <section><div class="paragraph"><p>Post the video on <strong>Youtube</strong> only, do not add a password to the video.</p></div>
-<div class="paragraph"><p>Make the video "unlisted" if you prefer.</p></div></section>
-<section><div class="ulist"><ul><li><p><strong>emlyon students only</strong>: write the link to the Youtube video on the Dropbox of brightspace.</p></li><li><p><strong>other participants</strong>: you can send me the links to the videos at <a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a> and I&#8217;ll be happy to evaluate them.</p></li></ul></div>
+<div class="paragraph"><p>Make the video "unlisted" if you prefer.</p></div>
 <div class="paragraph"><p><strong>Don&#8217;t send me video files as I will not open them!</strong></p></div></section>
 <section id="_7_essential_readings_and_to_go_further"><h2>7. Essential readings and to go further</h2></section>
 <section><div class="paragraph"><p>Access <a href="https://www.pinterest.fr/seinecle/internet-of-things/">this board on Pinterest</a> for a collection of documents on the Internet of things from a business point of view.</p></div>
@@ -159,7 +155,9 @@ You explain in this video the key difficulty you faced.</p></li></ul></div>
 <section><div class="paragraph"><p>If you look for a very complete, in-depth reference on IoT for entrepreneurs I warmly recommend:</p></div></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/oreilly-iot.jpg" alt="oreilly iot" height="100%" /></div><div class="title">Figure 2. Entreprise IoT</div></section>
 <section><div class="paragraph"><p>This book is available <a href="http://shop.oreilly.com/product/0636920039433.do">online here</a>.</p></div>
-<div class="paragraph"><p>emlyon students have access to this book freely through the <a href="http://proquestcombo.safaribooksonline.com.ezp.em-lyon.com/book/software-engineering-and-development/project-management/9781491934258">online library here</a>.</p></div></section>
+<div class="paragraph"><p>You have access to this book freely through the <a href="http://proquestcombo.safaribooksonline.com.ezp.em-lyon.com/book/software-engineering-and-development/project-management/9781491934258">online library here</a>.</p></div></section>
+<section id="_time_to_get_the_parts_and_create_teams"><h2>Time to get the parts and create teams</h2></section>
+<section><div class="ulist"><ul><li><p>Create teams of two</p></li><li><p>Put your names on the list and sign.</p></li></ul></div></section>
 <section id="_the_end"><h2>The end</h2></section>
 <section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/IoT4Entrepreneurs/">here</a>.</p></div>
 <div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span></p></div>
